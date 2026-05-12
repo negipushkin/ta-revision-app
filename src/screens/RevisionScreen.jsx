@@ -89,6 +89,12 @@ export default function RevisionScreen({ setScreen, reviewIds, onGoHome }) {
         total={displayQuestions.length}
         onFilterOpen={() => setFilterSheetOpen(true)}
         onSummary={() => setScreen('summary')}
+        onJumpTo={n => {
+          const target = Math.floor((n - 1) / 2) * 2
+          const clamped = Math.min(target, displayQuestions.length - 1)
+          setPageIndex(clamped)
+          answeredInPair.current = seedAnswered(displayQuestions.slice(clamped, clamped + 2))
+        }}
       />
       <ProgressBar attempted={stats.attempted} correct={stats.correct} total={stats.total} />
 
