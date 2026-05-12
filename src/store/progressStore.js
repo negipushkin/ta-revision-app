@@ -38,6 +38,17 @@ export function getMarkedCount() {
   return getMarkedIds().size
 }
 
+function computeBreakdown(allQuestions, progress, field) {
+  const groups = {}
+  for (const q of allQuestions) {
+    const key = q[field] || 'Unknown'
+    if (!groups[key]) groups[key] = { total: 0, attempted: 0 }
+    groups[key].total++
+    if (progress[q.id]?.attempted) groups[key].attempted++
+  }
+  return groups
+}
+
 export function getStats(allQuestions = []) {
   const progress = getProgress()
   const ids = Object.keys(progress)
@@ -46,17 +57,11 @@ export function getStats(allQuestions = []) {
   const wrong = attempted - correct
   const total = allQuestions.length
 
-  const bySubtopic = {}
-  for (const q of allQuestions) {
-    const st = q.subtopic || 'Unknown'
-    if (!bySubtopic[st]) bySubtopic[st] = { total: 0, attempted: 0, correct: 0 }
-    bySubtopic[st].total++
-    const entry = progress[q.id]
-    if (entry?.attempted) {
-      bySubtopic[st].attempted++
-      if (entry.correct) bySubtopic[st].correct++
-    }
+  return {
+    total, attempted, correct, wrong,
+    byCategory: computeBreakdown(allQuestions, progress, 'category'),
+    bySubtopic: computeBreakdown(allQuestions, progress, 'subtopic'),
+    byDifficulty: computeBreakdown(allQuestions, progress, 'difficulty'),
+    byPriority: computeBreakdown(allQuestions, progress, 'priority'),
   }
-
-  return { total, attempted, correct, wrong, bySubtopic }
 }

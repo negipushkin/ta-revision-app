@@ -1,8 +1,30 @@
 import { useState, useEffect } from 'react'
 import { getStats, resetProgress } from '../store/progressStore'
 
+const DIFFICULTY_ORDER = ['Hard', 'Moderate', 'Easy']
+const PRIORITY_ORDER = ['High', 'Medium', 'Low']
+
+const TABS = [
+  { key: 'category',   label: 'Topic' },
+  { key: 'subtopic',   label: 'Subtopic' },
+  { key: 'difficulty', label: 'Difficulty' },
+  { key: 'priority',   label: 'Priority' },
+]
+
+function sortedEntries(breakdown, tabKey) {
+  const entries = Object.entries(breakdown).filter(([, v]) => v.attempted > 0)
+  if (tabKey === 'difficulty') {
+    return entries.sort((a, b) => DIFFICULTY_ORDER.indexOf(a[0]) - DIFFICULTY_ORDER.indexOf(b[0]))
+  }
+  if (tabKey === 'priority') {
+    return entries.sort((a, b) => PRIORITY_ORDER.indexOf(a[0]) - PRIORITY_ORDER.indexOf(b[0]))
+  }
+  return entries.sort((a, b) => (a[1].attempted / a[1].total) - (b[1].attempted / b[1].total))
+}
+
 export default function SummaryScreen({ setScreen, allQuestions, onGoHome }) {
   const [stats, setStats] = useState(null)
+  const [tab, setTab] = useState('category')
   const [confirmReset, setConfirmReset] = useState(false)
 
   useEffect(() => {
@@ -17,13 +39,19 @@ export default function SummaryScreen({ setScreen, allQuestions, onGoHome }) {
 
   if (!stats) return null
 
-  const pct = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0
-  const subtopics = Object.entries(stats.bySubtopic).filter(([, v]) => v.attempted > 0)
+  const overallPct = stats.total > 0 ? Math.round((stats.attempted / stats.total) * 100) : 0
+  const breakdownMap = {
+    category:   stats.byCategory,
+    subtopic:   stats.bySubtopic,
+    difficulty: stats.byDifficulty,
+    priority:   stats.byPriority,
+  }
+  const rows = sortedEntries(breakdownMap[tab], tab)
 
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 h-14 bg-[#1e293b] border-b border-slate-700">
+      <div className="flex items-center gap-3 px-4 h-14 bg-[#1e293b] border-b border-slate-700 shrink-0">
         <button
           onClick={onGoHome}
           className="flex items-center justify-center w-11 h-11 rounded-lg text-slate-300 active:bg-slate-700"
@@ -36,71 +64,75 @@ export default function SummaryScreen({ setScreen, allQuestions, onGoHome }) {
         <h1 className="text-white font-semibold">Progress Summary</h1>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 py-5 space-y-5">
-        {/* Overall card */}
-        <div className="bg-[#1e293b] rounded-2xl p-5">
-          <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">Overall</p>
-          <div className="flex items-end gap-2 mb-4">
-            <span className="text-4xl font-bold text-white">{pct}%</span>
-            <span className="text-slate-400 text-sm pb-1 mb-1">accuracy</span>
+      {/* Overall card */}
+      <div className="px-4 pt-4 pb-3 shrink-0">
+        <div className="bg-[#1e293b] rounded-2xl p-4">
+          <div className="flex items-end gap-2 mb-1">
+            <span className="text-3xl font-bold text-white tabular-nums">{stats.attempted}</span>
+            <span className="text-slate-400 text-base pb-0.5">/ {stats.total}</span>
           </div>
-          <div className="grid grid-cols-3 gap-3 text-center">
-            <div className="bg-slate-800 rounded-xl p-3">
-              <p className="text-2xl font-bold text-white">{stats.attempted}</p>
-              <p className="text-xs text-slate-400 mt-0.5">Attempted</p>
-            </div>
-            <div className="bg-emerald-900/40 rounded-xl p-3">
-              <p className="text-2xl font-bold text-emerald-400">{stats.correct}</p>
-              <p className="text-xs text-slate-400 mt-0.5">Correct</p>
-            </div>
-            <div className="bg-red-900/30 rounded-xl p-3">
-              <p className="text-2xl font-bold text-red-400">{stats.wrong}</p>
-              <p className="text-xs text-slate-400 mt-0.5">Wrong</p>
-            </div>
+          <p className="text-xs text-slate-400 mb-3">questions attempted ({overallPct}% of bank)</p>
+          <div className="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-indigo-500 rounded-full transition-all"
+              style={{ width: `${overallPct}%` }}
+            />
           </div>
-          <p className="text-xs text-slate-500 mt-3 text-center">{stats.total} total questions in bank</p>
         </div>
+      </div>
 
-        {/* Subtopic breakdown */}
-        {subtopics.length > 0 && (
-          <div className="bg-[#1e293b] rounded-2xl overflow-hidden">
-            <div className="px-4 py-3 border-b border-slate-700">
-              <p className="text-slate-400 text-xs uppercase tracking-wider">By Subtopic</p>
-            </div>
-            <div className="divide-y divide-slate-700/60">
-              {subtopics
-                .sort((a, b) => {
-                  const pctA = a[1].attempted > 0 ? a[1].correct / a[1].attempted : 1
-                  const pctB = b[1].attempted > 0 ? b[1].correct / b[1].attempted : 1
-                  return pctA - pctB
-                })
-                .map(([subtopic, data]) => {
-                  const p = data.attempted > 0 ? Math.round((data.correct / data.attempted) * 100) : 0
-                  return (
-                    <div key={subtopic} className="px-4 py-3 flex items-center gap-3">
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm text-slate-200 font-medium truncate">{subtopic}</p>
-                        <p className="text-xs text-slate-500">{data.correct}/{data.attempted} correct</p>
-                      </div>
-                      <span className={`text-sm font-bold tabular-nums ${p >= 70 ? 'text-emerald-400' : p >= 40 ? 'text-amber-400' : 'text-red-400'}`}>
-                        {p}%
-                      </span>
-                    </div>
-                  )
-                })}
-            </div>
-          </div>
-        )}
+      {/* Tab bar */}
+      <div className="px-4 shrink-0">
+        <div className="flex border-b border-slate-700">
+          {TABS.map(t => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`flex-1 py-2.5 text-xs font-semibold transition-colors ${
+                tab === t.key
+                  ? 'text-white border-b-2 border-indigo-500'
+                  : 'text-slate-400'
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+      </div>
 
-        {subtopics.length === 0 && (
-          <div className="text-center py-8 text-slate-500 text-sm">
+      {/* Breakdown list */}
+      <div className="flex-1 overflow-y-auto px-4 py-3">
+        {rows.length === 0 ? (
+          <div className="flex items-center justify-center h-full text-slate-500 text-sm">
             No questions attempted yet. Start revising!
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {rows.map(([name, data]) => {
+              const pct = Math.round((data.attempted / data.total) * 100)
+              return (
+                <div key={name} className="bg-[#1e293b] rounded-xl px-4 py-3">
+                  <div className="flex items-center justify-between mb-2">
+                    <p className="text-sm text-slate-200 font-medium flex-1 mr-3 truncate">{name}</p>
+                    <span className="text-sm font-bold tabular-nums text-indigo-400 shrink-0">
+                      {data.attempted} / {data.total}
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-indigo-500 rounded-full"
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                </div>
+              )
+            })}
           </div>
         )}
       </div>
 
       {/* Footer */}
-      <div className="px-4 py-3 border-t border-slate-700 space-y-2">
+      <div className="px-4 py-3 border-t border-slate-700 shrink-0">
         <button
           onClick={() => setConfirmReset(true)}
           className="w-full h-11 rounded-xl border border-red-800 text-red-400 text-sm font-medium active:bg-red-900/30"
