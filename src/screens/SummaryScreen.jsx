@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { getStats, resetProgress } from '../store/progressStore'
 
-export default function SummaryScreen({ setScreen, allQuestions }) {
+export default function SummaryScreen({ setScreen, allQuestions, onGoHome }) {
   const [stats, setStats] = useState(null)
   const [confirmReset, setConfirmReset] = useState(false)
 
@@ -25,7 +25,7 @@ export default function SummaryScreen({ setScreen, allQuestions }) {
       {/* Header */}
       <div className="flex items-center gap-3 px-4 h-14 bg-[#1e293b] border-b border-slate-700">
         <button
-          onClick={() => setScreen('revision')}
+          onClick={onGoHome}
           className="flex items-center justify-center w-11 h-11 rounded-lg text-slate-300 active:bg-slate-700"
           aria-label="Back"
         >

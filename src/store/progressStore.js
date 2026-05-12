@@ -1,4 +1,5 @@
 const KEY = 'ta_progress'
+const REVIEW_KEY = 'ta_review'
 
 export function getProgress() {
   try {
@@ -16,6 +17,25 @@ export function markAnswer(id, isCorrect, selectedOption) {
 
 export function resetProgress() {
   localStorage.removeItem(KEY)
+}
+
+export function getMarkedIds() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(REVIEW_KEY) || '[]'))
+  } catch {
+    return new Set()
+  }
+}
+
+export function toggleReview(id) {
+  const marked = getMarkedIds()
+  marked.has(id) ? marked.delete(id) : marked.add(id)
+  localStorage.setItem(REVIEW_KEY, JSON.stringify([...marked]))
+  return marked.has(id)
+}
+
+export function getMarkedCount() {
+  return getMarkedIds().size
 }
 
 export function getStats(allQuestions = []) {

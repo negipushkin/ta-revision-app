@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { getProgress } from '../store/progressStore'
+import { getProgress, getMarkedIds, toggleReview } from '../store/progressStore'
 
 const DIFFICULTY_COLORS = {
   Easy: 'text-emerald-400 bg-emerald-400/10',
@@ -13,6 +13,7 @@ export default function QuestionCard({ question, onAnswer }) {
   const saved = getProgress()[question.id]
   const [selected, setSelected] = useState(saved?.selectedOption ?? null)
   const [revealed, setRevealed] = useState(!!saved?.attempted)
+  const [bookmarked, setBookmarked] = useState(() => getMarkedIds().has(question.id))
 
   const handleCheck = () => {
     if (!selected || revealed) return
@@ -47,6 +48,21 @@ export default function QuestionCard({ question, onAnswer }) {
         <span className="text-xs text-slate-500 bg-slate-700 px-2 py-0.5 rounded-full font-medium">
           {question.priority}
         </span>
+        <button
+          onClick={() => setBookmarked(toggleReview(question.id))}
+          className="ml-auto p-1 rounded-lg transition-colors active:bg-slate-700"
+          aria-label={bookmarked ? 'Remove from review' : 'Mark for review'}
+        >
+          {bookmarked ? (
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1.5">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+          ) : (
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" strokeWidth="1.5">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+          )}
+        </button>
       </div>
 
       {/* Question */}
