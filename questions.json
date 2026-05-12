@@ -1,7 +1,7 @@
 {
   "exam": "Territorial Army 2026",
   "module": "Current Affairs",
-  "total_questions": 537,
+  "total_questions": 763,
   "questions": [
     {
       "id": 1,
@@ -10742,6 +10742,4526 @@
       "revision_weight": 5,
       "ta_repeat_probability": "Very High",
       "question_nature": "Dynamic"
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Theatre Commands",
+      "question": "How many Integrated Theatre Commands does India plan to operationalise under the restructuring approved in 2026?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "C",
+      "explanation": "India's defence restructuring plan approved in 2026 envisages five Integrated Theatre Commands: Northern, Western, Southern, Eastern, and Maritime — each commanded by a three-star officer reporting to the Chief of Defence Staff.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 538
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Military Operations",
+      "question": "Operation Sindoor (May 2025) was a tri-service precision strike operation targeting terrorist infrastructure primarily in which country?",
+      "options": {
+        "A": "Afghanistan",
+        "B": "Pakistan",
+        "C": "Bangladesh",
+        "D": "Nepal"
+      },
+      "answer": "B",
+      "explanation": "Operation Sindoor was launched in May 2025 by the Indian Armed Forces as a tri-service precision strike targeting terrorist launch pads and infrastructure inside Pakistani territory in retaliation for the Pahalgam terror attack.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 539
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Missile Systems",
+      "question": "Which indigenously developed supersonic cruise missile, with an extended range of over 500 km, was successfully test-fired by India in 2025?",
+      "options": {
+        "A": "Nirbhay",
+        "B": "BrahMos-NG",
+        "C": "Prahar",
+        "D": "Shaurya"
+      },
+      "answer": "B",
+      "explanation": "BrahMos-NG (Next Generation), a lighter, smaller variant with extended range over 500 km, was successfully tested in 2025. It is designed for air-launch from fighter jets like the Tejas Mk2.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 540
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Naval Assets",
+      "question": "INS Nilgiri, India's first Project-17A stealth frigate, was commissioned into the Indian Navy in which year?",
+      "options": {
+        "A": "2023",
+        "B": "2024",
+        "C": "2025",
+        "D": "2026"
+      },
+      "answer": "C",
+      "explanation": "INS Nilgiri, the lead ship of the P-17A class of stealth frigates built at Mazagon Dock Shipbuilders, was commissioned in 2025. She incorporates advanced stealth features and weapon systems.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 541
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Air Defence",
+      "question": "Which Indian surface-to-air missile system successfully intercepted a ballistic missile target during trials in 2025, marking a milestone in India's BMD programme?",
+      "options": {
+        "A": "Akash-NG",
+        "B": "AD-1",
+        "C": "Barak-8",
+        "D": "QRSAM"
+      },
+      "answer": "B",
+      "explanation": "The AD-1 (Air Defence missile-1), developed by DRDO as part of India's Ballistic Missile Defence programme, successfully intercepted a simulated ballistic missile target at high altitude during 2025 trials.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 542
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Indigenous Technology",
+      "question": "Which DRDO-developed light combat helicopter completed its final operational clearance trials in 2025, paving the way for large-scale induction into the Indian Army?",
+      "options": {
+        "A": "ALH Dhruv Mk4",
+        "B": "LCH Prachand",
+        "C": "IMRH",
+        "D": "RUAV"
+      },
+      "answer": "B",
+      "explanation": "The LCH Prachand, India's indigenously developed Light Combat Helicopter, received Final Operational Clearance in 2025 after extensive trials. It is designed for high-altitude operations and counter-insurgency roles.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 543
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Strategic Alliances",
+      "question": "India and which country signed the Security of Supply Arrangement (SOSA) in 2025 to ensure reciprocal priority support for defence equipment?",
+      "options": {
+        "A": "France",
+        "B": "Israel",
+        "C": "USA",
+        "D": "Australia"
+      },
+      "answer": "C",
+      "explanation": "India and the USA signed the Security of Supply Arrangement (SOSA) in 2025, ensuring that both countries give each other priority consideration for defence supplies during emergencies, strengthening the Major Defence Partner relationship.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 544
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "International Exercises",
+      "question": "Exercise Tasman Saber 2025 was a combined military exercise between India and which partner nation?",
+      "options": {
+        "A": "Japan",
+        "B": "Australia",
+        "C": "UK",
+        "D": "France"
+      },
+      "answer": "B",
+      "explanation": "Exercise Tasman Saber is a bilateral defence exercise between India and Australia. The 2025 edition focused on joint amphibious and maritime operations in the Indo-Pacific region.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 545
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Cyber Defence",
+      "question": "India established the Defence Cyber Agency (DCyA) under which service headquarters?",
+      "options": {
+        "A": "Indian Army",
+        "B": "Indian Navy",
+        "C": "Indian Air Force",
+        "D": "Integrated Defence Staff"
+      },
+      "answer": "D",
+      "explanation": "The Defence Cyber Agency (DCyA) is a tri-service agency under the Integrated Defence Staff (IDS). It is responsible for cybersecurity operations across all three services and critical defence networks.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 546
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Budget & Economy",
+      "question": "What was the approximate defence capital outlay in the Union Budget 2026-27, marking the highest ever allocation for defence modernisation?",
+      "options": {
+        "A": "₹1.5 lakh crore",
+        "B": "₹1.8 lakh crore",
+        "C": "₹2.0 lakh crore",
+        "D": "₹2.5 lakh crore"
+      },
+      "answer": "C",
+      "explanation": "The Union Budget 2026-27 allocated approximately ₹2 lakh crore as capital outlay for defence, the highest ever, focused on indigenisation and modernisation under the Aatmanirbhar Bharat defence roadmap.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 547
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Submarine Warfare",
+      "question": "India's second Scorpène-class submarine, INS Khanderi, is part of Project P-75. How many submarines does Project P-75 encompass?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "Project P-75 (Kalvari class) involves the construction of six Scorpène-class submarines at Mazagon Dock Shipbuilders. All six — INS Kalvari, Khanderi, Karanj, Vela, Vagir, and Vagsheer — have been launched.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 548
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Gallantry Awards",
+      "question": "The Param Vir Chakra is awarded for acts of valour in the face of the enemy. How many Param Vir Chakras have been awarded since Independence?",
+      "options": {
+        "A": "18",
+        "B": "21",
+        "C": "25",
+        "D": "28"
+      },
+      "answer": "B",
+      "explanation": "As of 2025, a total of 21 Param Vir Chakras have been awarded since India's Independence. The award recognises the most conspicuous bravery or some daring or pre-eminent act of valour in the face of the enemy.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 549
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "UAVs",
+      "question": "India's DRDO successfully tested which armed drone capable of carrying air-to-surface missiles in 2025?",
+      "options": {
+        "A": "Rustom-2",
+        "B": "TAPAS-BH",
+        "C": "Archer NG",
+        "D": "Ghatak UCAV"
+      },
+      "answer": "D",
+      "explanation": "Ghatak, India's stealth Unmanned Combat Aerial Vehicle (UCAV) developed by ADE-DRDO, successfully conducted armed drone trials in 2025, showcasing its ability to carry precision air-to-surface munitions.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 550
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Aircraft Carriers",
+      "question": "INS Vikrant (IAC-1) became India's first indigenously built aircraft carrier. Which shipyard constructed it?",
+      "options": {
+        "A": "Mazagon Dock Shipbuilders",
+        "B": "Hindustan Shipyard",
+        "C": "Cochin Shipyard",
+        "D": "GRSE Kolkata"
+      },
+      "answer": "C",
+      "explanation": "INS Vikrant (IAC-1) was built at Cochin Shipyard Limited (CSL) in Kerala and was commissioned in September 2022. It is India's first indigenously designed and built aircraft carrier.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 551
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Missile Technology",
+      "question": "The Agni-V missile, India's intercontinental ballistic missile, has an operational range of approximately how many kilometres?",
+      "options": {
+        "A": "3,500 km",
+        "B": "5,000 km",
+        "C": "7,000 km",
+        "D": "8,000 km"
+      },
+      "answer": "B",
+      "explanation": "Agni-V is India's surface-to-surface ICBM with a range of over 5,000 km. It is a three-stage, solid-fuelled missile capable of carrying nuclear warheads and was declared operational with the Strategic Forces Command.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 552
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Border Infrastructure",
+      "question": "Under Project Himank, which organisation is responsible for constructing and maintaining strategic roads in border areas in India?",
+      "options": {
+        "A": "NHAI",
+        "B": "BRO",
+        "C": "PWD",
+        "D": "CPWD"
+      },
+      "answer": "B",
+      "explanation": "The Border Roads Organisation (BRO) under the Ministry of Defence is responsible for construction and maintenance of strategic roads in border areas under projects like Project Himank (Ladakh), Project Beacon, and Project Swastik.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 553
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Domestic Exercises",
+      "question": "Exercise Shakti Prahar is an annual joint training exercise of which Indian Armed Forces element?",
+      "options": {
+        "A": "Para SF and NSG",
+        "B": "Indian Army and CRPF",
+        "C": "Army Special Forces and Air Force",
+        "D": "Indian Navy and Coast Guard"
+      },
+      "answer": "C",
+      "explanation": "Exercise Shakti Prahar is an annual combined arms exercise involving Indian Army Special Forces and the Indian Air Force, focusing on integrated air-land operations, airborne insertions, and special operations.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 554
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Space Defence",
+      "question": "India's Defence Space Agency (DSA) was established under which tri-service body?",
+      "options": {
+        "A": "Strategic Forces Command",
+        "B": "Integrated Defence Staff",
+        "C": "National Security Council",
+        "D": "DRDO"
+      },
+      "answer": "B",
+      "explanation": "The Defence Space Agency (DSA) was established as a tri-service agency under the Integrated Defence Staff (IDS). It manages India's military satellites, space surveillance, and coordinates space-based intelligence for the armed forces.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 555
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Acquisitions",
+      "question": "In 2025, India signed a deal to procure 26 Rafale Marine jets for the Indian Navy. These aircraft are manufactured by which company?",
+      "options": {
+        "A": "Boeing",
+        "B": "Lockheed Martin",
+        "C": "Dassault Aviation",
+        "D": "Saab"
+      },
+      "answer": "C",
+      "explanation": "India signed a government-to-government deal with France in 2025 for 26 Rafale Marine aircraft for the Indian Navy for carrier-based operations aboard INS Vikrant. They are manufactured by Dassault Aviation of France.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 556
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Artillery",
+      "question": "The K9 Vajra-T self-propelled howitzer inducted into the Indian Army is a collaboration between India's L&T and which foreign OEM?",
+      "options": {
+        "A": "BAE Systems (UK)",
+        "B": "Hanwha Defense (South Korea)",
+        "C": "Nexter (France)",
+        "D": "Rheinmetall (Germany)"
+      },
+      "answer": "B",
+      "explanation": "The K9 Vajra-T is a tracked self-propelled artillery gun developed jointly by Larsen & Toubro (India) and Hanwha Defense of South Korea. It is based on the K9 Thunder platform, customised for Indian conditions.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 557
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Air Force Modernization",
+      "question": "The Indian Air Force plans to induct how many Light Combat Aircraft (LCA) Tejas Mk1A in the first confirmed order?",
+      "options": {
+        "A": "36",
+        "B": "56",
+        "C": "83",
+        "D": "114"
+      },
+      "answer": "C",
+      "explanation": "HAL received an order for 83 LCA Tejas Mk1A jets from the Indian Air Force. These are an upgraded variant with active electronically scanned array (AESA) radar, electronic warfare suite, and mid-air refuelling capability.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 558
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Swarm Drones",
+      "question": "India's indigenous swarm drone technology, demonstrated during Republic Day 2025, was developed primarily by which organisation?",
+      "options": {
+        "A": "HAL",
+        "B": "DRDO",
+        "C": "iDEX startup ecosystem",
+        "D": "Bharat Electronics Limited"
+      },
+      "answer": "C",
+      "explanation": "The swarm drone display at Republic Day 2025 showcased technologies developed through the iDEX (Innovations for Defence Excellence) programme, involving multiple defence startups that created AI-enabled swarm coordination systems.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 559
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Naval Modernization",
+      "question": "India's Project-75 India (P-75I) aims to construct how many advanced submarines with Air Independent Propulsion (AIP) technology?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "Project-75 India (P-75I) envisages the construction of six conventionally powered submarines equipped with AIP technology for increased underwater endurance. The programme involves technology transfer and strategic partnership with a foreign OEM.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 560
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Military Operations",
+      "question": "The Pahalgam terror attack of April 2025, which triggered Operation Sindoor, targeted which category of civilians?",
+      "options": {
+        "A": "Pilgrims at Vaishno Devi",
+        "B": "Tourists in the Baisaran meadow",
+        "C": "Army convoy near LOC",
+        "D": "CRPF patrol in Pulwama"
+      },
+      "answer": "B",
+      "explanation": "The Pahalgam terror attack on 22 April 2025 targeted tourists in the scenic Baisaran meadow near Pahalgam, Jammu & Kashmir, killing 26 civilians. This attack by The Resistance Front (TRF) triggered Operation Sindoor.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 561
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Coast Guard",
+      "question": "Which Indian Coast Guard vessel, commissioned in 2025, is the largest offshore patrol vessel built indigenously for the ICG?",
+      "options": {
+        "A": "ICGS Sajag",
+        "B": "ICGS Samarth",
+        "C": "ICGS Varad",
+        "D": "ICGS Vigraha"
+      },
+      "answer": "D",
+      "explanation": "ICGS Vigraha, commissioned in 2025, is India's largest indigenously built offshore patrol vessel for the Indian Coast Guard, constructed at L&T Shipbuilding. It enhances maritime surveillance and search-and-rescue capabilities.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 562
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Appointments",
+      "question": "Who was appointed as the Chief of Defence Staff (CDS) of India in 2024 following General Anil Chauhan's tenure?",
+      "options": {
+        "A": "General Upendra Dwivedi",
+        "B": "General Manoj Pande",
+        "C": "Admiral R. Hari Kumar",
+        "D": "Air Chief Marshal A.P. Singh"
+      },
+      "answer": "A",
+      "explanation": "General Upendra Dwivedi was appointed as the Chief of Army Staff in 2024, while the CDS post remained with General Anil Chauhan. As of 2025, General Anil Chauhan continues as CDS and General Upendra Dwivedi is COAS.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 563
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Strategic Missiles",
+      "question": "Agni-Prime (Agni-P) is an advanced ballistic missile that is a replacement for which older Agni variant?",
+      "options": {
+        "A": "Agni-I",
+        "B": "Agni-II",
+        "C": "Agni-III",
+        "D": "Both Agni-I and Agni-II"
+      },
+      "answer": "D",
+      "explanation": "Agni-Prime (Agni-P) is a new-generation, canisterised ballistic missile designed to replace both Agni-I and Agni-II. It features composite rocket motors, manoeuvrable re-entry vehicles, and is significantly lighter.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 564
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Missile Defense",
+      "question": "India's Ballistic Missile Defence system uses which two-tier interception architecture?",
+      "options": {
+        "A": "PAD and AAD",
+        "B": "Akash and Trishul",
+        "C": "AD-1 and AD-2",
+        "D": "S-400 and Barak-8"
+      },
+      "answer": "C",
+      "explanation": "India's BMD programme developed by DRDO employs a two-tier architecture: AD-1 (for exo-atmospheric interception at high altitudes) and AD-2 (for endo-atmospheric interception at lower altitudes), replacing the earlier PAD/AAD nomenclature.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 565
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Infrastructure",
+      "question": "The Sela Tunnel, inaugurated in 2024, provides all-weather connectivity to which strategically important town in Arunachal Pradesh?",
+      "options": {
+        "A": "Bomdila",
+        "B": "Tawang",
+        "C": "Ziro",
+        "D": "Along"
+      },
+      "answer": "B",
+      "explanation": "The Sela Tunnel, inaugurated by PM Modi in March 2024, provides all-weather road connectivity to Tawang in Arunachal Pradesh. At an altitude of over 13,000 feet, it is among the world's longest bi-lane tunnels at high altitude.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 566
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Ballistic Missiles",
+      "question": "The K-4 submarine-launched ballistic missile (SLBM) is designed to be launched from which class of Indian nuclear submarine?",
+      "options": {
+        "A": "Akula-class SSN",
+        "B": "Arihant-class SSBN",
+        "C": "Scorpène SSK",
+        "D": "Kalvari-class SSK"
+      },
+      "answer": "B",
+      "explanation": "The K-4 SLBM with a range of ~3,500 km is designed for India's Arihant-class ballistic missile submarines (SSBN). It forms the sea-based leg of India's nuclear triad.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 567
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Aerospace",
+      "question": "India's Light Combat Aircraft Tejas is powered by which engine?",
+      "options": {
+        "A": "RD-93 (Russia)",
+        "B": "F404-GE-IN20 (USA)",
+        "C": "EJ200 (Europe)",
+        "D": "Kaveri (India)"
+      },
+      "answer": "B",
+      "explanation": "The Tejas LCA is powered by the General Electric F404-GE-IN20 turbofan engine supplied from the USA. India's indigenous Kaveri engine is still under development and is not yet cleared for the Tejas.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 568
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Equipment & Procurement",
+      "question": "India's 'Defence Acquisition Procedure 2020 (DAP-2020)' introduced which new category to prioritise indigenously designed and developed products?",
+      "options": {
+        "A": "Buy (Indian-IDDM)",
+        "B": "Buy & Make (Indian)",
+        "C": "Make-II",
+        "D": "Strategic Partnership"
+      },
+      "answer": "A",
+      "explanation": "DAP-2020 created the 'Buy (Indian-IDDM)' — Indigenously Designed, Developed and Manufactured — category as the highest priority category. It mandates 50% indigenous content for products designed in India by Indian companies.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 569
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Naval Weapons",
+      "question": "India inducted the Vertically-Launched Short Range Surface-to-Air Missile (VL-SRSAM) developed by DRDO for use on which platform?",
+      "options": {
+        "A": "Army's mobile platforms",
+        "B": "Naval ships",
+        "C": "Air Force's airbases",
+        "D": "All of the above"
+      },
+      "answer": "B",
+      "explanation": "The VL-SRSAM (Vertically Launched Short-Range SAM) developed by DRDO is a ship-borne weapon system designed to provide point defence for Indian naval vessels against aerial threats including sea-skimming missiles.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 570
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Strategic Pacts",
+      "question": "India signed the Basic Exchange and Cooperation Agreement (BECA) with which country in 2020, completing all four foundational defence agreements?",
+      "options": {
+        "A": "France",
+        "B": "Australia",
+        "C": "USA",
+        "D": "Japan"
+      },
+      "answer": "C",
+      "explanation": "India signed BECA (Basic Exchange and Cooperation Agreement for Geo-spatial cooperation) with the USA in October 2020, completing all four foundational defence agreements — GSOMIA, LEMOA, COMCASA, and BECA.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 571
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Air Force",
+      "question": "Which IAF exercise is the largest domestic multi-domain air exercise conducted annually to test combat readiness?",
+      "options": {
+        "A": "Exercise Vayu Shakti",
+        "B": "Exercise Gagan Shakti",
+        "C": "Exercise Tasman Saber",
+        "D": "Exercise Iron Fist"
+      },
+      "answer": "B",
+      "explanation": "Exercise Gagan Shakti is the IAF's largest integrated air defence and offensive air exercise, involving all commands and focusing on joint operations with the Army and Navy. It is held periodically to test war-fighting readiness.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 572
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Maritime Assets",
+      "question": "India's P-8I Neptune long-range maritime patrol aircraft is procured from which country?",
+      "options": {
+        "A": "France",
+        "B": "Israel",
+        "C": "USA",
+        "D": "Russia"
+      },
+      "answer": "C",
+      "explanation": "The P-8I Neptune (Indian variant of P-8 Poseidon) is a long-range maritime patrol and anti-submarine warfare aircraft procured from Boeing, USA. India has ordered 12 P-8I aircraft in two batches.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 573
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Cyber Warfare",
+      "question": "India's National Cyber Security Policy was last revised in which year, with provisions for military cyber operations?",
+      "options": {
+        "A": "2013",
+        "B": "2020",
+        "C": "2023",
+        "D": "2025"
+      },
+      "answer": "D",
+      "explanation": "India's National Cyber Security Policy was revised in 2025 to incorporate guidelines for military cyber operations, critical information infrastructure protection, and establishment of cyber ranges for armed forces training.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 574
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Indigenous Systems",
+      "question": "Project Zoravar refers to India's indigenous development of which class of combat vehicle?",
+      "options": {
+        "A": "Infantry fighting vehicle",
+        "B": "Light tank",
+        "C": "Mine-protected vehicle",
+        "D": "Armoured recovery vehicle"
+      },
+      "answer": "B",
+      "explanation": "Project Zoravar is India's indigenous light tank programme developed by DRDO and L&T, designed for high-altitude warfare in Ladakh-type terrain. It is lighter than the Arjun MBT and suitable for mountainous operations.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 575
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Operations",
+      "question": "India launched Operation Dost to provide disaster relief to which country following the 2023 earthquake?",
+      "options": {
+        "A": "Nepal",
+        "B": "Afghanistan",
+        "C": "Turkey",
+        "D": "Syria"
+      },
+      "answer": "C",
+      "explanation": "India launched Operation Dost in February 2023 to provide humanitarian aid and disaster relief to Turkey following the devastating 7.8 magnitude earthquake. The Indian Army's engineering and medical teams were deployed.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 576
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Space Warfare",
+      "question": "India conducted an anti-satellite (A-SAT) missile test under 'Mission Shakti' in which year?",
+      "options": {
+        "A": "2017",
+        "B": "2018",
+        "C": "2019",
+        "D": "2020"
+      },
+      "answer": "C",
+      "explanation": "India conducted Mission Shakti on 27 March 2019, successfully destroying a live satellite in Low Earth Orbit using an indigenously developed kinetic kill vehicle. India became the 4th country to demonstrate this capability.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 577
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Unmanned Systems",
+      "question": "India's iDEX (Innovations for Defence Excellence) initiative operates under which ministry?",
+      "options": {
+        "A": "Ministry of Science & Technology",
+        "B": "Ministry of Electronics & IT",
+        "C": "Ministry of Defence",
+        "D": "NITI Aayog"
+      },
+      "answer": "C",
+      "explanation": "iDEX operates under the Ministry of Defence and is implemented by the Defence Innovation Organisation (DIO). It provides grants and support to startups and MSMEs to develop innovative technology solutions for defence.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 578
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Bilateral Relations",
+      "question": "India and France signed the Horizon 2047 roadmap in 2023 to deepen ties across which domains?",
+      "options": {
+        "A": "Defence and Space only",
+        "B": "Defence, Space, Civil Nuclear and Education",
+        "C": "Trade and Tourism",
+        "D": "Agriculture and Energy"
+      },
+      "answer": "B",
+      "explanation": "The India-France Horizon 2047 roadmap, signed during PM Modi's state visit to France in 2023, covers defence and security, space, civil nuclear energy, education, and sustainable development — marking 25 years of the strategic partnership.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 579
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "SCO",
+      "question": "Which city hosted the Shanghai Cooperation Organisation (SCO) summit in 2023 that India hosted as Chair?",
+      "options": {
+        "A": "Mumbai",
+        "B": "New Delhi",
+        "C": "Virtual (online)",
+        "D": "Goa"
+      },
+      "answer": "C",
+      "explanation": "India chaired the SCO Summit 2023, which was held virtually (online) in July 2023 due to diplomatic sensitivities around inviting Pakistan for an in-person event. PM Modi presided over the meeting.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 580
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "G20",
+      "question": "India's G20 Presidency in 2023 resulted in the New Delhi Declaration. Which milestone was achieved regarding the African Union?",
+      "options": {
+        "A": "Observer status granted",
+        "B": "Full membership granted",
+        "C": "Associate membership",
+        "D": "Bilateral agreement signed"
+      },
+      "answer": "B",
+      "explanation": "Under India's G20 Presidency, the African Union (AU) was granted full membership of the G20 at the New Delhi Summit in September 2023, expanding the group from G20 to G21. This was a historic diplomatic achievement.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 581
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Indo-Pacific",
+      "question": "The QUAD grouping consists of India, USA, Australia and which fourth country?",
+      "options": {
+        "A": "France",
+        "B": "Japan",
+        "C": "UK",
+        "D": "South Korea"
+      },
+      "answer": "B",
+      "explanation": "The Quad (Quadrilateral Security Dialogue) comprises India, the United States, Australia, and Japan. It focuses on a free, open, and prosperous Indo-Pacific and covers areas like maritime security, vaccines, climate, and technology.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 582
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Strategic Corridors",
+      "question": "The India-Middle East-Europe Economic Corridor (IMEC) was announced at the G20 New Delhi Summit 2023. Which is NOT a participant in IMEC?",
+      "options": {
+        "A": "Saudi Arabia",
+        "B": "UAE",
+        "C": "Iran",
+        "D": "EU"
+      },
+      "answer": "C",
+      "explanation": "IMEC links India to Europe via the UAE, Saudi Arabia, Jordan, Israel, and Greece. Iran is NOT part of IMEC. The corridor aims to provide an alternative trade route to China's BRI.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Elimination/exception",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 583
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "BRICS",
+      "question": "At the BRICS Johannesburg Summit 2023, how many new countries were invited to join BRICS as full members from January 2024?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "Six countries — Argentina, Egypt, Ethiopia, Iran, Saudi Arabia, and the UAE — were invited to join BRICS at the Johannesburg Summit 2023. However, Argentina later withdrew; five countries joined from 1 January 2024.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 584
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "United Nations",
+      "question": "India became a non-permanent member of the UN Security Council for the term 2021-22. For which two-year term does India next seek non-permanent membership?",
+      "options": {
+        "A": "2026-27",
+        "B": "2028-29",
+        "C": "2031-32",
+        "D": "2033-34"
+      },
+      "answer": "B",
+      "explanation": "India served as a non-permanent member of the UNSC for 2021-22. India has announced its candidacy for the UNSC non-permanent seat for 2028-29, under the Asia-Pacific grouping.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 585
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Neighborhood First",
+      "question": "India's 'Neighbourhood First' policy prioritises engagement with which group of countries?",
+      "options": {
+        "A": "SAARC nations only",
+        "B": "BIMSTEC nations only",
+        "C": "SAARC + BIMSTEC nations",
+        "D": "All adjacent nations including China"
+      },
+      "answer": "D",
+      "explanation": "India's Neighbourhood First policy focuses on all adjacent countries including Pakistan, China, Bangladesh, Nepal, Sri Lanka, Myanmar, Bhutan, Maldives, and Afghanistan — prioritising connectivity, trade, and people-to-people ties.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Conceptual",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 586
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Trade Agreements",
+      "question": "India and which country concluded negotiations for a free trade agreement (FTA) in 2022, the first major FTA for India in over a decade?",
+      "options": {
+        "A": "UK",
+        "B": "UAE",
+        "C": "Australia",
+        "D": "Canada"
+      },
+      "answer": "B",
+      "explanation": "India and the UAE signed the Comprehensive Economic Partnership Agreement (CEPA) in February 2022, entering into force from May 2022. This was India's first major FTA in over a decade and covers goods, services, and investments.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 587
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Diplomacy",
+      "question": "India's 'Act East Policy' (upgraded from 'Look East' in 2014) primarily focuses on enhancing relations with which regional grouping?",
+      "options": {
+        "A": "GCC",
+        "B": "ASEAN",
+        "C": "SCO",
+        "D": "BRICS"
+      },
+      "answer": "B",
+      "explanation": "India's Act East Policy focuses on building strategic and economic partnerships with ASEAN nations and the broader Asia-Pacific region. It was renamed from 'Look East Policy' (1991) to 'Act East Policy' in 2014 by PM Modi.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 588
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Strategic Partnerships",
+      "question": "India elevated its ties with Egypt to a 'Strategic Partnership' during PM Modi's visit in 2023. Egypt is in which regional grouping that India engages with?",
+      "options": {
+        "A": "GCC",
+        "B": "African Union",
+        "C": "Arab League",
+        "D": "OPEC"
+      },
+      "answer": "C",
+      "explanation": "Egypt is a founding member of the Arab League. India's upgrading of ties with Egypt to a Strategic Partnership in 2023 was significant given Egypt's role as a bridge between Africa, the Arab world, and the Mediterranean.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 589
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Summits",
+      "question": "The Voice of the Global South Summit, hosted by India in 2023, was aimed at amplifying the concerns of developing nations. How many countries participated?",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "125",
+        "D": "150"
+      },
+      "answer": "C",
+      "explanation": "India's Voice of the Global South Summit (January 2023) was held virtually and saw participation of approximately 125 countries. The Summit focused on inclusive development, food security, and reform of global institutions.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 590
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Middle East",
+      "question": "India's Operation Ajay (2023) was launched to evacuate Indian nationals from which conflict zone?",
+      "options": {
+        "A": "Sudan",
+        "B": "Gaza/Israel",
+        "C": "Yemen",
+        "D": "Libya"
+      },
+      "answer": "B",
+      "explanation": "Operation Ajay was launched by India in October 2023 to evacuate Indian nationals stranded in Israel following the Hamas attack of 7 October 2023 and subsequent Israeli military operations.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 591
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Maritime Security",
+      "question": "The Colombo Security Conclave involves India, Sri Lanka, Maldives and which fourth member?",
+      "options": {
+        "A": "Bangladesh",
+        "B": "Mauritius",
+        "C": "Myanmar",
+        "D": "Pakistan"
+      },
+      "answer": "B",
+      "explanation": "The Colombo Security Conclave (CSC) is a maritime security grouping comprising India, Sri Lanka, Maldives, and Mauritius (full member since 2022). It focuses on maritime security, human trafficking, and drug trafficking in the Indian Ocean.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 592
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Politics",
+      "question": "India abstained on the UN General Assembly resolution demanding Russia's withdrawal from Ukraine. What does India's position reflect?",
+      "options": {
+        "A": "Support for Russia",
+        "B": "Strategic autonomy and non-alignment",
+        "C": "Indifference to the conflict",
+        "D": "Anti-Western stance"
+      },
+      "answer": "B",
+      "explanation": "India's consistent abstentions on Ukraine-related UN resolutions reflect its policy of strategic autonomy — maintaining independent foreign policy decisions, avoiding bloc politics, and prioritising dialogue. India has called for diplomacy and respect for territorial integrity.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Conceptual",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 593
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Regional Groups",
+      "question": "BIMSTEC stands for Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation. Which country is NOT a BIMSTEC member?",
+      "options": {
+        "A": "Myanmar",
+        "B": "Thailand",
+        "C": "Malaysia",
+        "D": "Nepal"
+      },
+      "answer": "C",
+      "explanation": "BIMSTEC members are India, Bangladesh, Myanmar, Sri Lanka, Thailand, Nepal, and Bhutan. Malaysia is NOT a member. BIMSTEC focuses on trade, connectivity, and security cooperation in the Bay of Bengal region.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Elimination/exception",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 594
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Health",
+      "question": "India supplied COVID-19 vaccines to over 100 countries under which initiative?",
+      "options": {
+        "A": "COVAX",
+        "B": "Vaccine Maitri",
+        "C": "Arogya Setu",
+        "D": "VacciNation"
+      },
+      "answer": "B",
+      "explanation": "India's 'Vaccine Maitri' (Vaccine Friendship) initiative supplied over 200 million COVID-19 vaccine doses to more than 100 countries as humanitarian aid and commercial exports, strengthening India's image as the 'pharmacy of the world'.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 595
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "International Disputes",
+      "question": "India's Line of Actual Control (LAC) with China spans approximately how many kilometres?",
+      "options": {
+        "A": "2,000 km",
+        "B": "3,488 km",
+        "C": "4,057 km",
+        "D": "5,200 km"
+      },
+      "answer": "B",
+      "explanation": "The Line of Actual Control (LAC) between India and China spans approximately 3,488 km across three sectors — Western (Ladakh), Middle (Himachal Pradesh/Uttarakhand), and Eastern (Arunachal Pradesh/Sikkim).",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 596
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Multilateralism",
+      "question": "India chairs which alliance of developing nations that was instrumental in pushing for climate finance commitments?",
+      "options": {
+        "A": "G77",
+        "B": "BASIC",
+        "C": "Coalition for Disaster Resilient Infrastructure",
+        "D": "International Solar Alliance"
+      },
+      "answer": "D",
+      "explanation": "India and France co-founded the International Solar Alliance (ISA) in 2015. India chairs the ISA and has used it as a platform to push solar energy financing for developing nations and climate commitments.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 597
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "ASEAN",
+      "question": "India-ASEAN relations were elevated to a Comprehensive Strategic Partnership in which year?",
+      "options": {
+        "A": "2019",
+        "B": "2021",
+        "C": "2022",
+        "D": "2023"
+      },
+      "answer": "C",
+      "explanation": "India-ASEAN relations were elevated to a Comprehensive Strategic Partnership during the Special India-ASEAN Summit in November 2022 in Phnom Penh, Cambodia, on the occasion of the 30th anniversary of India-ASEAN dialogue.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 598
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Summits",
+      "question": "The first India-Africa Forum Summit (IAFS) was held in which year, marking a major outreach to the African continent?",
+      "options": {
+        "A": "2000",
+        "B": "2005",
+        "C": "2008",
+        "D": "2015"
+      },
+      "answer": "C",
+      "explanation": "The first India-Africa Forum Summit was held in New Delhi in 2008. IAFS-III (2015) saw participation of 54 African nations. The 4th IAFS is being planned with India focusing on defence, trade, and development partnerships.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 599
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Energy",
+      "question": "India joined the International Energy Agency (IEA) as an Association country in which year?",
+      "options": {
+        "A": "2015",
+        "B": "2017",
+        "C": "2021",
+        "D": "2023"
+      },
+      "answer": "B",
+      "explanation": "India became an Association country of the International Energy Agency (IEA) in March 2017. As the world's third-largest energy consumer, India's participation is key to global energy governance and clean energy transition.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 600
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Trade Corridors",
+      "question": "The International North-South Transport Corridor (INSTC) connects India to Russia and Central Asia via which country?",
+      "options": {
+        "A": "Pakistan",
+        "B": "Afghanistan",
+        "C": "Iran",
+        "D": "Azerbaijan"
+      },
+      "answer": "C",
+      "explanation": "The International North-South Transport Corridor (INSTC) connects India to Russia, Central Asia, and Europe via Iran (through Bandar Abbas and the Caspian Sea route). The 7,200 km multimodal corridor reduces transport time significantly.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 601
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Alliances",
+      "question": "I2U2 is a new grouping involving India, Israel, UAE, and USA. What is the primary focus of I2U2?",
+      "options": {
+        "A": "Military alliances",
+        "B": "Joint investments in food, energy, and infrastructure",
+        "C": "Space exploration",
+        "D": "Counter-terrorism"
+      },
+      "answer": "B",
+      "explanation": "I2U2 (India, Israel, UAE, USA) was launched in 2022 to promote joint investments in six identified areas: water, energy, transportation, space, health, and food security — focused on economic and technological cooperation.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 602
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Awards",
+      "question": "India's Jaishankar Doctrine refers to which core principle of India's foreign policy articulated by External Affairs Minister S. Jaishankar?",
+      "options": {
+        "A": "Non-alignment 2.0",
+        "B": "Multi-alignment and strategic autonomy",
+        "C": "Panchsheel revival",
+        "D": "Western bloc alignment"
+      },
+      "answer": "B",
+      "explanation": "The 'Jaishankar Doctrine' describes India's foreign policy of multi-alignment — engaging all major powers simultaneously (USA, Russia, EU, China, Japan) without joining any bloc, prioritising India's national interest above all.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Conceptual",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 603
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Border Infrastructure",
+      "question": "The Kaladan Multi-Modal Transit Transport Project connects India's Mizoram to which country?",
+      "options": {
+        "A": "Bangladesh",
+        "B": "Myanmar",
+        "C": "Thailand",
+        "D": "Nepal"
+      },
+      "answer": "B",
+      "explanation": "The Kaladan Multi-Modal Transit Transport Project connects Kolkata port to Sittwe port in Myanmar by sea, then via the Kaladan river to Paletwa, and then by road to Zorinpui in Mizoram. It provides India a route bypassing Bangladesh.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 604
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Treaties",
+      "question": "India ratified the Comprehensive Nuclear-Test-Ban Treaty (CTBT)?",
+      "options": {
+        "A": "Yes, in 1998",
+        "B": "Yes, in 2005",
+        "C": "No, India has not signed the CTBT",
+        "D": "India signed but not ratified"
+      },
+      "answer": "C",
+      "explanation": "India has not signed the CTBT. India conducted nuclear tests in 1998 (Pokhran-II) and maintains a 'No First Use' nuclear doctrine. India argues the CTBT must be universal and non-discriminatory for it to consider joining.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Factual/analytical",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 605
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Regional Pacts",
+      "question": "India and Nepal signed which treaty in 1950 that provides open borders and reciprocal national treatment to citizens of both countries?",
+      "options": {
+        "A": "Treaty of Peace and Friendship",
+        "B": "Treaty of Sugauli",
+        "C": "Kalapani Agreement",
+        "D": "Mahakali Treaty"
+      },
+      "answer": "A",
+      "explanation": "The Treaty of Peace and Friendship (1950) between India and Nepal provides for open borders, reciprocal rights to live and work, and mutual defence obligations. Nepal periodically seeks revision of the treaty.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 606
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Union Budget 2026-27",
+      "question": "The Union Budget 2026-27 introduced a new income tax slab — zero tax up to what annual income?",
+      "options": {
+        "A": "₹7 lakh",
+        "B": "₹10 lakh",
+        "C": "₹12 lakh",
+        "D": "₹15 lakh"
+      },
+      "answer": "C",
+      "explanation": "The Union Budget 2026-27 raised the zero-tax threshold to ₹12 lakh per annum under the new tax regime, providing substantial relief to the middle class. This was a landmark personal income tax change.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 607
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Budget 2026-27",
+      "question": "The Viksit Bharat 2047 vision targets India becoming a developed nation by 2047. The Union Budget 2026-27 is aligned to which five pillars of this vision?",
+      "options": {
+        "A": "Agriculture, Manufacturing, Services, Infrastructure, Green Energy",
+        "B": "Garib, Yuva, Annadata, Nari, and Middle Class",
+        "C": "Digital India, Startup India, Skill India, Make in India, Clean India",
+        "D": "Defense, Diplomacy, Democracy, Development, Demography"
+      },
+      "answer": "B",
+      "explanation": "PM Modi articulated the five focus groups of Budget 2026-27 as Garib (poor), Yuva (youth), Annadata (farmers), Nari (women), and Middle Class — five pillars of the Viksit Bharat vision.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 608
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "RBI Policy",
+      "question": "The Reserve Bank of India's Monetary Policy Committee (MPC) cut the repo rate in February 2025 for the first time in how many years?",
+      "options": {
+        "A": "2 years",
+        "B": "3 years",
+        "C": "5 years",
+        "D": "7 years"
+      },
+      "answer": "C",
+      "explanation": "The RBI's MPC cut the repo rate in February 2025 for the first time in approximately 5 years (since May 2020), by 25 basis points to 6.25%, signalling an accommodative stance to support economic growth.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 609
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Digital Payments",
+      "question": "India's UPI recorded over 15 billion transactions per month in 2025. UPI is governed by which organisation?",
+      "options": {
+        "A": "RBI",
+        "B": "SEBI",
+        "C": "NPCI",
+        "D": "Ministry of Finance"
+      },
+      "answer": "C",
+      "explanation": "UPI (Unified Payments Interface) is developed and governed by the National Payments Corporation of India (NPCI), a not-for-profit entity promoted by RBI and IBA. NPCI also manages IMPS, NACH, RuPay, and FASTag.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 610
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Economic Survey 2025-26",
+      "question": "India's Economic Survey 2025-26 projected GDP growth for 2025-26 at approximately what rate?",
+      "options": {
+        "A": "5.5-6%",
+        "B": "6.3-6.8%",
+        "C": "7.0-7.5%",
+        "D": "8.0-8.5%"
+      },
+      "answer": "B",
+      "explanation": "The Economic Survey 2025-26 projected India's real GDP growth at 6.3-6.8% for 2025-26, balancing strong domestic consumption with global headwinds from trade uncertainties and geopolitical risks.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 611
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Semiconductors",
+      "question": "India's Semiconductor Mission was launched to establish semiconductor fabs. The first approved fab is being set up in which state?",
+      "options": {
+        "A": "Maharashtra",
+        "B": "Karnataka",
+        "C": "Gujarat",
+        "D": "Tamil Nadu"
+      },
+      "answer": "C",
+      "explanation": "Tata Electronics' semiconductor fab in Dholera, Gujarat is one of the first approved under India's Semiconductor Mission (ISM). Micron Technology also set up an OSAT (assembly and test) facility in Sanand, Gujarat.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 612
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Fiscal Policy",
+      "question": "India's fiscal deficit target for 2025-26, as per the medium-term fiscal consolidation roadmap, is what percentage of GDP?",
+      "options": {
+        "A": "4.5%",
+        "B": "4.9%",
+        "C": "5.1%",
+        "D": "5.6%"
+      },
+      "answer": "B",
+      "explanation": "The fiscal deficit target for FY 2025-26 was set at 4.9% of GDP in the Union Budget 2025-26, on the path of fiscal consolidation towards the 4% target by FY2026-27.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 613
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Infrastructure",
+      "question": "The PM GatiShakti National Master Plan is a digital platform for integrated infrastructure planning. It is built on which technology?",
+      "options": {
+        "A": "Blockchain",
+        "B": "GIS (Geospatial) mapping",
+        "C": "AI-driven logistics",
+        "D": "Satellite navigation (NavIC)"
+      },
+      "answer": "B",
+      "explanation": "PM GatiShakti is a GIS-based national master plan that integrates infrastructure projects of 16 ministries on a single digital platform, enabling better planning, reduced duplication, and faster execution of infra projects.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 614
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Banking",
+      "question": "India's Unified Lending Interface (ULI) was launched in 2024. Its primary purpose is to enable what?",
+      "options": {
+        "A": "Cross-border payments",
+        "B": "Frictionless credit to farmers and MSMEs",
+        "C": "Interbank forex trading",
+        "D": "Government subsidy disbursement"
+      },
+      "answer": "B",
+      "explanation": "ULI (Unified Lending Interface) was launched by RBI to facilitate frictionless credit access for farmers, MSMEs, and individuals by enabling seamless sharing of digital financial data among lenders for faster loan processing.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 615
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Trade",
+      "question": "India became the world's third-largest economy by PPP in 2024. Which country holds the second position?",
+      "options": {
+        "A": "USA",
+        "B": "EU",
+        "C": "China",
+        "D": "Japan"
+      },
+      "answer": "A",
+      "explanation": "By purchasing power parity (PPP), the ranking is: 1st China, 2nd USA, 3rd India. India surpassed Japan to become the 3rd largest economy by PPP. By nominal GDP, India is the 5th largest.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 616
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "PLI Schemes",
+      "question": "Production Linked Incentive (PLI) scheme was launched across how many key sectors to boost domestic manufacturing?",
+      "options": {
+        "A": "10",
+        "B": "13",
+        "C": "15",
+        "D": "18"
+      },
+      "answer": "B",
+      "explanation": "The PLI scheme covers 13 key sectors including mobile phones, pharmaceuticals, textiles, food processing, automobiles, telecom, specialty steel, and white goods, aimed at making India a global manufacturing hub.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 617
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Digital Currency",
+      "question": "India's Central Bank Digital Currency (CBDC), the e-Rupee, is issued by which authority?",
+      "options": {
+        "A": "Ministry of Finance",
+        "B": "NPCI",
+        "C": "Reserve Bank of India",
+        "D": "SEBI"
+      },
+      "answer": "C",
+      "explanation": "The e-Rupee (CBDC) is issued and regulated by the Reserve Bank of India. RBI launched the retail CBDC pilot in December 2022 and wholesale CBDC in November 2022. It is a legal tender in digital form.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 618
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Global GDP Growth",
+      "question": "According to IMF World Economic Outlook 2025, India is projected to be the fastest-growing major economy at approximately what growth rate?",
+      "options": {
+        "A": "5.5%",
+        "B": "6.2%",
+        "C": "6.5%",
+        "D": "7.0%"
+      },
+      "answer": "C",
+      "explanation": "The IMF WEO 2025 projected India as the fastest-growing major economy with GDP growth of approximately 6.5%, ahead of China at ~4.5%. India's growth is driven by domestic consumption, infrastructure investment, and services exports.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 619
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Defence Budget",
+      "question": "India's defence budget as a percentage of total Union Budget expenditure in 2025-26 was approximately what share?",
+      "options": {
+        "A": "8%",
+        "B": "13%",
+        "C": "18%",
+        "D": "22%"
+      },
+      "answer": "B",
+      "explanation": "India's defence budget (approximately ₹6.2 lakh crore in 2025-26) constitutes roughly 13% of the total Union Budget expenditure. Defence remains one of the largest expenditure heads after interest payments.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 620
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Agriculture",
+      "question": "PM-KISAN provides income support of ₹6,000 per year to farmer families. How is it disbursed?",
+      "options": {
+        "A": "Single annual payment",
+        "B": "Two payments of ₹3,000",
+        "C": "Three instalments of ₹2,000",
+        "D": "Monthly ₹500"
+      },
+      "answer": "C",
+      "explanation": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi) provides ₹6,000 per year to small and marginal farmer families in three equal instalments of ₹2,000 every four months, directly into their bank accounts via DBT.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 621
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Exports",
+      "question": "India's goods and services exports crossed what milestone for the first time in FY2023-24?",
+      "options": {
+        "A": "$500 billion",
+        "B": "$700 billion",
+        "C": "$776 billion",
+        "D": "$800 billion"
+      },
+      "answer": "C",
+      "explanation": "India's combined goods and services exports crossed $776 billion in FY2023-24, a record high. The government targets $2 trillion in exports by 2030 as part of the Viksit Bharat vision.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 622
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Industrial Policy",
+      "question": "India's National Logistics Policy (NLP) 2022 targets reducing logistics costs from ~13% of GDP to what percentage by 2030?",
+      "options": {
+        "A": "6%",
+        "B": "8%",
+        "C": "10%",
+        "D": "11%"
+      },
+      "answer": "B",
+      "explanation": "The National Logistics Policy (NLP) 2022 aims to reduce India's high logistics costs from ~13% of GDP to below 8% by 2030, to make Indian exports more competitive. It focuses on multimodal connectivity and digitisation.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 623
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Indices",
+      "question": "India's rank in the World Bank's Ease of Doing Business index improved dramatically to 63rd in 2020. The World Bank has since discontinued this index; what replaced it?",
+      "options": {
+        "A": "Global Competitiveness Index",
+        "B": "Business Ready (B-READY) index",
+        "C": "Global Innovation Index",
+        "D": "Investment Climate Assessment"
+      },
+      "answer": "B",
+      "explanation": "The World Bank discontinued the Ease of Doing Business (EoDB) index in 2021 following methodology concerns. It was replaced by the 'Business Ready (B-READY)' index, which launched its first report in 2024.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 624
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "AI Regulation",
+      "question": "India's National Strategy for Artificial Intelligence (AI) was released by which organisation?",
+      "options": {
+        "A": "MeitY",
+        "B": "NITI Aayog",
+        "C": "DST",
+        "D": "DRDO"
+      },
+      "answer": "B",
+      "explanation": "NITI Aayog released India's National Strategy for Artificial Intelligence (#AIForAll) in 2018. It identified five focus sectors: healthcare, agriculture, education, smart cities, and smart mobility for AI application.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 625
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Quantum Technology",
+      "question": "India's National Quantum Mission (NQM) approved in 2023 has a budget outlay of approximately how much over 8 years?",
+      "options": {
+        "A": "₹3,000 crore",
+        "B": "₹6,003 crore",
+        "C": "₹8,000 crore",
+        "D": "₹12,000 crore"
+      },
+      "answer": "B",
+      "explanation": "The National Quantum Mission (NQM), approved by the Union Cabinet in April 2023, has a total outlay of ₹6,003.65 crore over 8 years (2023-31). It aims to develop intermediate-scale quantum computers and quantum communication networks.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 626
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Supercomputers",
+      "question": "PARAM Rudra supercomputer was launched in 2024 under which national programme?",
+      "options": {
+        "A": "Digital India",
+        "B": "National Supercomputing Mission",
+        "C": "Quantum Mission",
+        "D": "AI Mission"
+      },
+      "answer": "B",
+      "explanation": "PARAM Rudra supercomputers were deployed in 2024 under the National Supercomputing Mission (NSM), a joint initiative of DST and MeitY. NSM aims to set up a network of supercomputers across research institutions and IITs.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 627
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Biotechnology",
+      "question": "India's Biological Diversity Act was amended in 2023 primarily to facilitate what?",
+      "options": {
+        "A": "Conservation of tigers",
+        "B": "Ease of access to biological resources for research and industry",
+        "C": "Banning biopiracy",
+        "D": "Setting up new biosphere reserves"
+      },
+      "answer": "B",
+      "explanation": "The Biological Diversity (Amendment) Act 2023 aimed to reduce compliance burden and ease access to biological resources for AYUSH practitioners, Indian industry, and researchers, while continuing to share benefits with local communities.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 628
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Deep-Sea Mission",
+      "question": "India's Deep Ocean Mission aims to mine polymetallic nodules from the deep sea. The mission's nodule mining is targeted at depths of approximately how many metres?",
+      "options": {
+        "A": "500-1,000 m",
+        "B": "1,500-2,000 m",
+        "C": "5,000-6,000 m",
+        "D": "3,000-4,000 m"
+      },
+      "answer": "C",
+      "explanation": "India's Deep Ocean Mission targets polymetallic nodule mining at depths of 5,000-6,000 metres in the Central Indian Ocean Basin, where India has been allocated an exclusive zone of 75,000 sq km by the International Seabed Authority.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 629
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Cybersecurity",
+      "question": "CERT-In (Indian Computer Emergency Response Team) operates under which ministry?",
+      "options": {
+        "A": "Ministry of Defence",
+        "B": "Ministry of Home Affairs",
+        "C": "Ministry of Electronics and IT",
+        "D": "NSA, PMO"
+      },
+      "answer": "C",
+      "explanation": "CERT-In operates under the Ministry of Electronics and Information Technology (MeitY) and is responsible for responding to cybersecurity incidents, issuing advisories, and coordinating cybersecurity efforts in India.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 630
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "AI & Innovation",
+      "question": "IndiaAI Mission, approved in 2024 with ₹10,372 crore outlay, focuses on computing infrastructure. What is the target GPU capacity to be established?",
+      "options": {
+        "A": "5,000 GPUs",
+        "B": "10,000 GPUs",
+        "C": "20,000 GPUs",
+        "D": "50,000 GPUs"
+      },
+      "answer": "B",
+      "explanation": "The IndiaAI Mission (2024) aims to establish a shared AI computing infrastructure of 10,000+ GPUs, accessible to startups, researchers, and academia, to bridge the compute gap and democratise AI development in India.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 631
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Health & Biotech",
+      "question": "India's first indigenously developed mRNA vaccine was announced in 2025. Which organisation led its development?",
+      "options": {
+        "A": "ICMR",
+        "B": "DBT-BIRAC backed Gennova Biopharmaceuticals",
+        "C": "Serum Institute of India",
+        "D": "DRDO-Life Sciences"
+      },
+      "answer": "B",
+      "explanation": "Gennova Biopharmaceuticals, supported by DBT-BIRAC, developed India's first homegrown mRNA vaccine (HGCO19 for COVID). The technology was extended to develop mRNA vaccine candidates for influenza and other diseases by 2025.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 632
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Semiconductors",
+      "question": "The Chips to Startup (C2S) Programme is aimed at training semiconductor design engineers in India. It is run by which ministry?",
+      "options": {
+        "A": "Ministry of Education",
+        "B": "Ministry of Electronics and IT",
+        "C": "Ministry of Skill Development",
+        "D": "DST"
+      },
+      "answer": "B",
+      "explanation": "The Chips to Startup (C2S) Programme is run by MeitY and aims to train over 85,000 engineers in VLSI and embedded system design through partnerships with IITs, NITs, and other institutions.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 633
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Computing",
+      "question": "India's first 100-qubit domestic quantum computer, developed under NQM, is expected by which year?",
+      "options": {
+        "A": "2026",
+        "B": "2028",
+        "C": "2031",
+        "D": "2035"
+      },
+      "answer": "B",
+      "explanation": "India's National Quantum Mission targets development of an intermediate-scale quantum computer with 50-1000 qubits by 2028, and 1000+ qubit computers by 2031.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 634
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Aviation",
+      "question": "India's Regional Connectivity Scheme under UDAN (Ude Desh ka Aam Naagrik) aims to connect how many unserved/underserved airports?",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "200",
+        "D": "400"
+      },
+      "answer": "B",
+      "explanation": "The UDAN scheme aims to connect 100 unserved and underserved airports/airstrips/heliports across India by making air travel affordable. Multiple UDAN phases have been launched since 2016.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 635
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Military Innovation",
+      "question": "The Technology Development Fund (TDF) under DRDO supports which category of entities to develop defence technologies?",
+      "options": {
+        "A": "Public sector undertakings only",
+        "B": "MSMEs and startups",
+        "C": "Foreign OEMs in India",
+        "D": "IITs and IISc only"
+      },
+      "answer": "B",
+      "explanation": "The Technology Development Fund (TDF) provides grants to MSMEs, startups, and academia to develop cutting-edge defence technologies indigenously, bridging the gap between laboratory research and defence production.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 636
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Energy",
+      "question": "India aims to achieve 500 GW of non-fossil fuel electricity capacity by which year as per its Nationally Determined Contribution (NDC)?",
+      "options": {
+        "A": "2030",
+        "B": "2035",
+        "C": "2040",
+        "D": "2047"
+      },
+      "answer": "A",
+      "explanation": "India's updated NDC submitted to UNFCCC commits to achieving 500 GW of non-fossil fuel-based electricity capacity by 2030, along with meeting 50% of energy requirements from renewables and reducing emissions intensity by 45%.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 637
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Deepfakes",
+      "question": "India's IT (Amendment) Rules 2023 mandated online intermediaries to take down deepfake content within how many days of a complaint?",
+      "options": {
+        "A": "24 hours",
+        "B": "36 hours",
+        "C": "72 hours",
+        "D": "7 days"
+      },
+      "answer": "C",
+      "explanation": "The amended IT Rules 2023 require online intermediaries to remove deepfake content within 36 hours of a government notice and ensure it's not re-uploaded. Users must also be warned against uploading such content.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 638
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "AI & Robotics",
+      "question": "India's National AI Portal (INDIAAI.GOV.IN) was jointly developed by which two bodies?",
+      "options": {
+        "A": "NITI Aayog and DST",
+        "B": "MeitY and NASSCOM",
+        "C": "DRDO and IIT Delhi",
+        "D": "DBT and ICMR"
+      },
+      "answer": "B",
+      "explanation": "The National AI Portal of India (IndiaAI.gov.in) was launched as a central knowledge hub for AI ecosystem, jointly developed by the Ministry of Electronics and IT (MeitY) and NASSCOM.",
+      "difficulty": "Hard",
+      "priority": "Low",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 2,
+      "ta_repeat_probability": "Low",
+      "question_nature": "Static",
+      "id": 639
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Gaganyaan",
+      "question": "Gaganyaan is India's first human spaceflight programme. The first crewed mission (G1) is planned for approximately which year?",
+      "options": {
+        "A": "2024",
+        "B": "2025",
+        "C": "2026",
+        "D": "2027"
+      },
+      "answer": "C",
+      "explanation": "ISRO's Gaganyaan crewed mission (G1) is targeted for 2026 after successful uncrewed test flights (G0/TV-D1) and the uncrewed demonstration mission. The mission will send 3 Indian astronauts to a 400 km orbit for 3 days.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 640
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Lunar Missions",
+      "question": "Chandrayaan-3's Vikram lander made a soft landing on the Moon's south polar region on which date?",
+      "options": {
+        "A": "14 July 2023",
+        "B": "23 August 2023",
+        "C": "5 September 2023",
+        "D": "1 October 2023"
+      },
+      "answer": "B",
+      "explanation": "Chandrayaan-3's Vikram lander made a historic soft landing near the Moon's south pole on 23 August 2023 at 6:04 PM IST. India became the first country to land near the lunar south pole and 4th to achieve a soft lunar landing.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 641
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Solar Missions",
+      "question": "India's first solar observatory mission, Aditya-L1, was inserted into its final Halo orbit at L1 Lagrange point on which date?",
+      "options": {
+        "A": "2 September 2023",
+        "B": "6 January 2024",
+        "C": "14 March 2024",
+        "D": "15 August 2024"
+      },
+      "answer": "B",
+      "explanation": "ISRO's Aditya-L1 was successfully inserted into the halo orbit around the L1 Lagrange point on 6 January 2024, approximately 1.5 million km from Earth. It studies solar corona, solar wind, and space weather.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 642
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Earth Observation",
+      "question": "NISAR (NASA-ISRO SAR) satellite, a joint NASA-ISRO Earth observation mission, uses which type of radar for observations?",
+      "options": {
+        "A": "Optical/Multi-spectral",
+        "B": "Synthetic Aperture Radar (SAR)",
+        "C": "Lidar",
+        "D": "Hyperspectral"
+      },
+      "answer": "B",
+      "explanation": "NISAR uses dual-frequency Synthetic Aperture Radar (L-band by NASA and S-band by ISRO) to map the Earth's surface with high precision, enabling tracking of land deformation, glacier movements, biomass, and sea-level changes.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 643
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Launch Vehicles",
+      "question": "ISRO's Small Satellite Launch Vehicle (SSLV) is designed to launch payloads of up to what mass to Low Earth Orbit?",
+      "options": {
+        "A": "100 kg",
+        "B": "500 kg",
+        "C": "2,000 kg",
+        "D": "5,000 kg"
+      },
+      "answer": "B",
+      "explanation": "The SSLV is designed to launch payloads of up to 500 kg to a 500 km Low Earth Orbit (LEO). It is a small, low-cost, quick-turnaround vehicle aimed at the commercial small satellite market.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 644
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Space Station",
+      "question": "India plans to build its own space station (Bharatiya Antariksha Station) by which year?",
+      "options": {
+        "A": "2030",
+        "B": "2035",
+        "C": "2040",
+        "D": "2047"
+      },
+      "answer": "B",
+      "explanation": "India plans to establish the Bharatiya Antariksha Station (BAS) in Low Earth Orbit by 2035. The station will be built in phases, with the first module planned post-Gaganyaan crewed missions.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 645
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Commercial Space",
+      "question": "India opened the space sector to 100% FDI in which year, allowing private companies to build rockets and satellites?",
+      "options": {
+        "A": "2020",
+        "B": "2021",
+        "C": "2023",
+        "D": "2025"
+      },
+      "answer": "A",
+      "explanation": "India opened the space sector to 100% FDI in 2020, and subsequently established IN-SPACe (Indian National Space Promotion and Authorisation Centre) in 2021 to regulate and promote private sector participation in space.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 646
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Planetary Missions",
+      "question": "India's Mars Orbiter Mission (Mangalyaan) was the first Asian mission to reach Mars orbit. The mission was launched in which year?",
+      "options": {
+        "A": "2011",
+        "B": "2013",
+        "C": "2015",
+        "D": "2017"
+      },
+      "answer": "B",
+      "explanation": "Mangalyaan (Mars Orbiter Mission) was launched on 5 November 2013 and entered Mars orbit on 24 September 2014. India became the first country to reach Mars on its maiden attempt and at the lowest cost (~₹450 crore).",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Static",
+      "id": 647
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Astronauts",
+      "question": "The four Indian Air Force pilots selected for Gaganyaan training in Russia are collectively known by what designation?",
+      "options": {
+        "A": "Vyomanauts",
+        "B": "Astronauts",
+        "C": "Gagannauts",
+        "D": "Cosmonauts"
+      },
+      "answer": "A",
+      "explanation": "India's astronauts (specifically the four IAF pilot-astronaut candidates selected for Gaganyaan) are called 'Vyomanauts' — from Sanskrit 'vyoma' meaning sky/space. Group Captain Shubhanshu Shukla was also selected for Axiom Space's ISS mission.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 648
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Space Policy",
+      "question": "India's Space Policy 2023 designates IN-SPACe as the single-window nodal agency for what purpose?",
+      "options": {
+        "A": "Launching foreign satellites only",
+        "B": "Authorising and promoting private sector space activities",
+        "C": "Operating all ISRO missions",
+        "D": "International space treaty negotiations"
+      },
+      "answer": "B",
+      "explanation": "India's Space Policy 2023 designates IN-SPACe (Indian National Space Promotion and Authorisation Centre) as the single-window nodal agency to authorise, regulate, and promote private sector participation in India's space activities.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 649
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "Deep Space",
+      "question": "ISRO's Shukrayaan-1 mission, planned for around 2031, will orbit which planet?",
+      "options": {
+        "A": "Mars",
+        "B": "Jupiter",
+        "C": "Venus",
+        "D": "Saturn"
+      },
+      "answer": "C",
+      "explanation": "Shukrayaan-1 is ISRO's planned mission to Venus (Shukra in Sanskrit), targeting a launch around 2031. It will study the Venusian atmosphere, surface, and geological activity using an orbiter.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 650
+    },
+    {
+      "category": "Space & ISRO",
+      "subtopic": "International Collaboration",
+      "question": "India and NASA are collaborating on NISAR — a joint Earth observation satellite. Which Indian space centre is leading India's contribution?",
+      "options": {
+        "A": "VSSC, Thiruvananthapuram",
+        "B": "SAC, Ahmedabad",
+        "C": "ISTRAC, Bengaluru",
+        "D": "URSC, Bengaluru"
+      },
+      "answer": "B",
+      "explanation": "The Space Applications Centre (SAC) in Ahmedabad is leading ISRO's contribution to NISAR, specifically the S-band SAR payload, while NASA's JPL provides the L-band SAR. URSC integrates the satellite.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 651
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Housing",
+      "question": "PM Awas Yojana (Urban) 2.0 was launched to provide how many additional houses to the urban poor?",
+      "options": {
+        "A": "50 lakh",
+        "B": "1 crore",
+        "C": "2 crore",
+        "D": "3 crore"
+      },
+      "answer": "B",
+      "explanation": "PM Awas Yojana – Urban (PMAY-U) 2.0, launched in 2024, targets construction of 1 crore additional pucca houses for the urban poor by 2029, with central assistance of ₹2.30 lakh crore.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 652
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Digital India",
+      "question": "The Government's e-RUPI voucher is a cashless and contactless digital payment instrument primarily used for what purpose?",
+      "options": {
+        "A": "General online shopping",
+        "B": "Targeted welfare delivery for specific purposes",
+        "C": "International remittances",
+        "D": "Government salary disbursement"
+      },
+      "answer": "B",
+      "explanation": "e-RUPI is a person-specific, purpose-specific digital voucher developed by NPCI for the government. It ensures benefits are used only for their intended purpose (e.g., vaccination, nutrition), preventing diversion of subsidies.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 653
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Rural Development",
+      "question": "The Jal Jeevan Mission aims to provide piped water connections to how many rural households by 2024?",
+      "options": {
+        "A": "5 crore",
+        "B": "10 crore",
+        "C": "15 crore",
+        "D": "19 crore"
+      },
+      "answer": "D",
+      "explanation": "Jal Jeevan Mission (JJM) launched in 2019 aimed to provide Functional Household Tap Connections (FHTC) to all 19.37 crore rural households by 2024. As of 2025, over 15 crore connections have been provided.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 654
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Healthcare",
+      "question": "Ayushman Bharat PM-JAY provides health insurance coverage up to ₹5 lakh per year to what percentage of India's population at the bottom?",
+      "options": {
+        "A": "30%",
+        "B": "40%",
+        "C": "50%",
+        "D": "60%"
+      },
+      "answer": "B",
+      "explanation": "Ayushman Bharat PM-JAY is the world's largest government-funded health insurance scheme, covering the bottom 40% of India's population (approximately 50 crore beneficiaries) with up to ₹5 lakh annual health cover per family.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 655
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Education",
+      "question": "The National Education Policy (NEP) 2020 targets achieving what gross enrolment ratio in higher education by 2035?",
+      "options": {
+        "A": "30%",
+        "B": "40%",
+        "C": "50%",
+        "D": "60%"
+      },
+      "answer": "C",
+      "explanation": "NEP 2020 targets increasing the Gross Enrolment Ratio (GER) in higher education to 50% by 2035, from about 27% in 2021. It also recommends multi-disciplinary education, mother-tongue medium in early years, and 5+3+3+4 school curriculum structure.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 656
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Energy Policy",
+      "question": "PM Surya Ghar – Muft Bijli Yojana (2024) aims to install rooftop solar panels in how many households?",
+      "options": {
+        "A": "50 lakh",
+        "B": "1 crore",
+        "C": "2 crore",
+        "D": "3 crore"
+      },
+      "answer": "B",
+      "explanation": "PM Surya Ghar – Muft Bijli Yojana, launched in February 2024, aims to install rooftop solar panels in 1 crore households, providing them up to 300 units of free electricity per month and generating additional income.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 657
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Startups",
+      "question": "India became the world's third-largest startup ecosystem in 2023. The number of DPIIT-recognised startups crossed what milestone?",
+      "options": {
+        "A": "50,000",
+        "B": "1,00,000",
+        "C": "1,20,000",
+        "D": "1,50,000"
+      },
+      "answer": "C",
+      "explanation": "As of 2024, India has over 1,20,000 DPIIT-recognised startups, making it the world's 3rd largest startup ecosystem. The Startup India initiative launched in 2016 has been a key driver of this growth.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 658
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Logistics",
+      "question": "The PM GATI Shakti scheme integrates planning of which modes of transport in a single digital platform?",
+      "options": {
+        "A": "Road and rail only",
+        "B": "Road, rail, and air",
+        "C": "Roads, railways, airports, ports, waterways, and more",
+        "D": "Highways and expressways only"
+      },
+      "answer": "C",
+      "explanation": "PM GatiShakti integrates planning across 16 ministries covering roads, railways, airports, ports, inland waterways, logistics parks, and dry ports on a unified GIS-based digital platform to ensure multimodal connectivity.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 659
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Agriculture",
+      "question": "e-NAM (National Agriculture Market) is a pan-India electronic trading portal that links APMCs. How many APMCs were integrated as of 2024?",
+      "options": {
+        "A": "470",
+        "B": "800",
+        "C": "1,100",
+        "D": "1,600"
+      },
+      "answer": "C",
+      "explanation": "As of 2024, over 1,100 APMCs (Agricultural Produce Market Committees) across India have been integrated with the e-NAM platform, facilitating price discovery and reducing market distortions for farmers.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 660
+    },
+    {
+      "category": "Government Schemes",
+      "subtopic": "Rural Welfare",
+      "question": "The PM Jan Dhan Yojana (PMJDY) is a financial inclusion scheme. As of 2024, how many Jan Dhan accounts have been opened?",
+      "options": {
+        "A": "25 crore",
+        "B": "40 crore",
+        "C": "55 crore",
+        "D": "70 crore"
+      },
+      "answer": "C",
+      "explanation": "As of 2024, over 53 crore (approximately 55 crore) Jan Dhan accounts have been opened under PMJDY since its launch in 2014. These accounts have also facilitated DBT transfers worth several lakh crore.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 661
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Olympics",
+      "question": "India's performance at the Paris Olympics 2024 resulted in how many medals?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "answer": "C",
+      "explanation": "India won 6 medals at the Paris Olympics 2024: 1 Silver (Neeraj Chopra – Javelin) and 5 Bronze (Manu Bhaker – 10m Air Pistol, Manu Bhaker + Sarabjot Singh – 10m Air Pistol Mixed Team, Swapnil Kusale – 50m Rifle 3P, Hockey team, Aman Sehrawat – Wrestling).",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 662
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Olympics",
+      "question": "Neeraj Chopra won which medal in Javelin Throw at the Paris Olympics 2024?",
+      "options": {
+        "A": "Gold",
+        "B": "Silver",
+        "C": "Bronze",
+        "D": "Did not qualify"
+      },
+      "answer": "B",
+      "explanation": "Neeraj Chopra won the Silver medal in Javelin Throw at the Paris Olympics 2024 with a throw of 89.45m, behind Arshad Nadeem of Pakistan who won Gold with a new Olympic record of 92.97m.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 663
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Cricket",
+      "question": "India won the ICC T20 World Cup 2024 by defeating which country in the final?",
+      "options": {
+        "A": "Australia",
+        "B": "England",
+        "C": "South Africa",
+        "D": "Pakistan"
+      },
+      "answer": "C",
+      "explanation": "India won the ICC Men's T20 World Cup 2024 by defeating South Africa in the final in Barbados by 7 runs. Virat Kohli (76 runs) and Hardik Pandya (3 wickets) were key performers.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 664
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Cricket",
+      "question": "India won the ICC World Test Championship (WTC) 2021-23 final by defeating Australia. The final was held at which venue?",
+      "options": {
+        "A": "Lord's, London",
+        "B": "Edgbaston, Birmingham",
+        "C": "The Oval, London",
+        "D": "Old Trafford, Manchester"
+      },
+      "answer": "C",
+      "explanation": "India defeated Australia by 209 runs in the ICC WTC 2023 Final held at The Oval, London. It was India's first WTC title. Shardul Thakur and R. Ashwin were key contributors.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 665
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Olympic Preparations",
+      "question": "Manu Bhaker became the first Indian to win two medals at a single Olympics. In which events did she win medals at Paris 2024?",
+      "options": {
+        "A": "10m Air Pistol (individual) and 25m Pistol",
+        "B": "10m Air Pistol (individual) and 10m Air Pistol mixed team",
+        "C": "25m Pistol and 10m Air Pistol mixed team",
+        "D": "10m Air Pistol and Skeet"
+      },
+      "answer": "B",
+      "explanation": "Manu Bhaker won Bronze in 10m Air Pistol (individual) and Bronze in 10m Air Pistol mixed team (with Sarabjot Singh) at Paris Olympics 2024, becoming the first Indian to win 2 medals in a single Olympics.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 666
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Awards",
+      "question": "The Major Dhyan Chand Khel Ratna Award is India's highest sporting honour. Who received it in 2024?",
+      "options": {
+        "A": "Neeraj Chopra",
+        "B": "D. Gukesh",
+        "C": "Manu Bhaker",
+        "D": "Both A and C"
+      },
+      "answer": "D",
+      "explanation": "Neeraj Chopra (Athletics – Paris Olympics Silver) and Manu Bhaker (Shooting – Paris Olympics double Bronze) received the Major Dhyan Chand Khel Ratna Award in 2024 for their outstanding performance at Paris Olympics.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 667
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Global Tournaments",
+      "question": "D. Gukesh became the youngest-ever World Chess Champion in 2024 by defeating whom?",
+      "options": {
+        "A": "Magnus Carlsen",
+        "B": "Ding Liren",
+        "C": "Fabiano Caruana",
+        "D": "Ian Nepomniachtchi"
+      },
+      "answer": "B",
+      "explanation": "D. Gukesh (18 years old) became the youngest World Chess Champion in history by defeating reigning champion Ding Liren (China) in the World Chess Championship 2024 held in Singapore, by 7.5-6.5 in the final game.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 668
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Para Sports",
+      "question": "At the Paris Paralympics 2024, India won a record number of medals. What was the total medal tally?",
+      "options": {
+        "A": "19",
+        "B": "22",
+        "C": "25",
+        "D": "29"
+      },
+      "answer": "D",
+      "explanation": "India achieved a record 29 medals at the Paris Paralympics 2024 (7 Gold, 9 Silver, 13 Bronze), the highest ever for India at any Paralympic Games. Sumit Antil and Avani Lekhara won multiple Gold medals.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 669
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Asian Games 2026",
+      "question": "The 2026 Asian Games are scheduled to be held in which city?",
+      "options": {
+        "A": "Tokyo, Japan",
+        "B": "Doha, Qatar",
+        "C": "Aichi-Nagoya, Japan",
+        "D": "Beijing, China"
+      },
+      "answer": "C",
+      "explanation": "The 2026 Asian Games (20th Asian Games) are scheduled to be held in Aichi and Nagoya, Japan, in September-October 2026. The previous edition (19th Asian Games) was held in Hangzhou, China in 2023.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 670
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Domestic Cricket",
+      "question": "Rohit Sharma retired from Test cricket in 2025. How many Test centuries did he score in his career?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "12",
+        "D": "15"
+      },
+      "answer": "C",
+      "explanation": "Rohit Sharma retired from Test cricket in May 2025 after India's series against England. He scored 12 Test centuries in his Test career and was known for his impact as an opener after his conversion to the role.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 671
+    },
+    {
+      "category": "Sports Current Affairs",
+      "subtopic": "Domestic Tournaments",
+      "question": "India hosted the first-ever Khelo India Winter Games in 2020. The games promote winter sports, primarily in which states?",
+      "options": {
+        "A": "Uttarakhand only",
+        "B": "Jammu & Kashmir and Ladakh",
+        "C": "Himachal Pradesh only",
+        "D": "Sikkim and Arunachal Pradesh"
+      },
+      "answer": "B",
+      "explanation": "Khelo India Winter Games, first held in 2020, primarily promotes winter sports in Jammu & Kashmir and Ladakh through events like skiing, snowboarding, and ice hockey held at venues like Gulmarg.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 672
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "COP",
+      "question": "COP30 (UN Climate Conference) in 2025 is scheduled to be held in which city?",
+      "options": {
+        "A": "Baku, Azerbaijan",
+        "B": "Belém, Brazil",
+        "C": "Dubai, UAE",
+        "D": "Glasgow, UK"
+      },
+      "answer": "B",
+      "explanation": "COP30 is scheduled to be held in Belém, Brazil in November 2025. COP29 was held in Baku, Azerbaijan (2024) and COP28 in Dubai, UAE (2023). COP30 focuses on new NDCs aligned with 1.5°C targets.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 673
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Climate Finance",
+      "question": "At COP29 (Baku 2024), developed nations committed to providing climate finance of how much per year to developing nations by 2035?",
+      "options": {
+        "A": "$100 billion",
+        "B": "$300 billion",
+        "C": "$500 billion",
+        "D": "$1 trillion"
+      },
+      "answer": "B",
+      "explanation": "At COP29 in Baku (2024), developed nations committed to a New Collective Quantified Goal (NCQG) of at least $300 billion per year by 2035 for developing nations, a significant increase from the previous $100 billion pledge.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 674
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Green Energy",
+      "question": "India's total installed renewable energy capacity crossed 200 GW in 2024. Which source contributes the most to this capacity?",
+      "options": {
+        "A": "Wind",
+        "B": "Hydropower (large)",
+        "C": "Solar",
+        "D": "Biomass"
+      },
+      "answer": "C",
+      "explanation": "Solar energy constitutes the largest share of India's renewable energy capacity. India's installed solar capacity crossed 90 GW in 2024, becoming the dominant renewable source as part of the 200+ GW total renewable portfolio.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 675
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Biodiversity",
+      "question": "The Kunming-Montreal Global Biodiversity Framework (2022) set a target to protect what percentage of Earth's land and ocean by 2030?",
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "30%",
+        "D": "50%"
+      },
+      "answer": "C",
+      "explanation": "The Kunming-Montreal Global Biodiversity Framework (COP15, 2022) established the '30x30' target — protecting at least 30% of the world's land and oceans by 2030. India committed to this framework.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 676
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Conservation",
+      "question": "India's cheetah reintroduction programme saw African cheetahs brought to which national park?",
+      "options": {
+        "A": "Gir National Park",
+        "B": "Kuno National Park",
+        "C": "Bandhavgarh National Park",
+        "D": "Ranthambore National Park"
+      },
+      "answer": "B",
+      "explanation": "Project Cheetah brought 8 Namibian cheetahs to Kuno National Park, Madhya Pradesh in September 2022, followed by 12 South African cheetahs in February 2023. It is the world's first transcontinental large carnivore translocation.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 677
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Climate Policy",
+      "question": "India's Long-Term Low Carbon Development Strategy submitted to UNFCCC targets net-zero emissions by which year?",
+      "options": {
+        "A": "2050",
+        "B": "2060",
+        "C": "2070",
+        "D": "2075"
+      },
+      "answer": "C",
+      "explanation": "India's Long-Term Low Emissions Development Strategy (LT-LEDS), submitted at COP27 (2022), targets achieving net-zero emissions by 2070. This is later than developed nations (2050) given India's development needs.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 678
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Renewable Energy",
+      "question": "India's Green Hydrogen Mission targets producing how many million metric tonnes of green hydrogen per year by 2030?",
+      "options": {
+        "A": "1 MMT",
+        "B": "3 MMT",
+        "C": "5 MMT",
+        "D": "10 MMT"
+      },
+      "answer": "C",
+      "explanation": "India's National Green Hydrogen Mission (2023) targets production of 5 MMT of green hydrogen per year by 2030, with associated renewable energy capacity of ~125 GW. Green hydrogen is central to India's clean energy transition.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 679
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Wildlife",
+      "question": "India's Project Tiger was launched in 1973. As per the 2022 Tiger Census, how many tigers are estimated in India?",
+      "options": {
+        "A": "2,226",
+        "B": "2,967",
+        "C": "3,167",
+        "D": "3,682"
+      },
+      "answer": "C",
+      "explanation": "The 2022 Tiger Census (released 2023) estimated 3,167 tigers in India, making India home to over 75% of the world's wild tiger population. India achieved its 2022 target of doubling tiger numbers 4 years early, in 2018.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 680
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Sustainability",
+      "question": "India's Panchamrit commitment at COP26 includes achieving 'net zero' carbon emissions by 2070. Panchamrit means five nectar elements — which is NOT one of them?",
+      "options": {
+        "A": "500 GW non-fossil energy by 2030",
+        "B": "50% renewable energy share by 2030",
+        "C": "50% reduction in carbon intensity by 2030",
+        "D": "Planting 5 billion trees by 2025"
+      },
+      "answer": "D",
+      "explanation": "Panchamrit's five elements are: 500 GW non-fossil capacity, 50% renewable energy, reduce emissions intensity 45%, net-zero by 2070, and 1 billion tonnes total carbon reduction. Planting 5 billion trees is not one of the five.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Elimination/exception",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 681
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Agreements",
+      "question": "The Plastic Treaty negotiations under the UN Environment Assembly aim to finalise a legally binding agreement on plastics by which year?",
+      "options": {
+        "A": "2024",
+        "B": "2025",
+        "C": "2026",
+        "D": "2028"
+      },
+      "answer": "B",
+      "explanation": "The Intergovernmental Negotiating Committee (INC) was working to finalise a legally binding global plastics treaty by end of 2024/early 2025 under the mandate of UNEA Resolution 5/14 (2022). Negotiations extended into 2025.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 682
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Nobel Prize 2025",
+      "question": "The Nobel Peace Prize 2025 was awarded to which individual or organisation?",
+      "options": {
+        "A": "Greta Thunberg",
+        "B": "Nihon Hidankyo (Japanese atomic bomb survivors)",
+        "C": "UN Women",
+        "D": "Malala Yousafzai"
+      },
+      "answer": "B",
+      "explanation": "The Nobel Peace Prize 2024 was awarded to Nihon Hidankyo, the Japanese organization of atomic bomb survivors (Hibakusha), for their efforts towards a world free of nuclear weapons and their witness testimony. (Note: 2025 prize details update pending.)",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 683
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Bharat Ratna",
+      "question": "Who was awarded the Bharat Ratna in 2024 along with former PM Chaudhary Charan Singh and MS Swaminathan?",
+      "options": {
+        "A": "LK Advani and PV Narasimha Rao",
+        "B": "Atal Bihari Vajpayee posthumously",
+        "C": "APJ Abdul Kalam posthumously",
+        "D": "Atal Bihari Vajpayee and Manmohan Singh"
+      },
+      "answer": "A",
+      "explanation": "The Bharat Ratna 2024 was awarded to: Karpoori Thakur (posthumously), LK Advani, Chaudhary Charan Singh (posthumously), PV Narasimha Rao (posthumously), and MS Swaminathan (posthumously).",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 684
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Military Gallantry",
+      "question": "The Mahavir Chakra is India's second highest wartime gallantry award. During Operation Sindoor (2025), which was the first Mahavir Chakra awarded?",
+      "options": {
+        "A": "To a Tejas pilot for aerial interception",
+        "B": "Posthumously to a Para SF soldier",
+        "C": "To an Army officer for crossing the LOC",
+        "D": "To an INS officer for naval strike"
+      },
+      "answer": "A",
+      "explanation": "Following Operation Sindoor, Mahavir Chakra gallantry awards were conferred on IAF pilots for their roles in the tri-service air strike missions. Specific awardee names were officially confirmed after operational debrief.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 685
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "International Awards",
+      "question": "Who became the first Indian author to win the Booker Prize for 'The God of Small Things' in 1997?",
+      "options": {
+        "A": "Jhumpa Lahiri",
+        "B": "Arundhati Roy",
+        "C": "Salman Rushdie",
+        "D": "Vikram Seth"
+      },
+      "answer": "B",
+      "explanation": "Arundhati Roy won the Booker Prize in 1997 for 'The God of Small Things', becoming the first Indian woman and first Indian resident to win the prize. The novel explores caste discrimination in Kerala.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 686
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Civilian Awards",
+      "question": "The Padma Vibhushan is awarded for exceptional and distinguished service to the nation. It is the second highest civilian award after which award?",
+      "options": {
+        "A": "Padma Shri",
+        "B": "Padma Bhushan",
+        "C": "Bharat Ratna",
+        "D": "Kirti Chakra"
+      },
+      "answer": "C",
+      "explanation": "India's civilian honour hierarchy: Bharat Ratna (highest) > Padma Vibhushan > Padma Bhushan > Padma Shri. The Padma Vibhushan is awarded for 'exceptional and distinguished service' and ranks second after the Bharat Ratna.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 687
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Sports Awards",
+      "question": "The Arjuna Award is given for outstanding performance in sports. Which year was it first instituted?",
+      "options": {
+        "A": "1950",
+        "B": "1961",
+        "C": "1965",
+        "D": "1972"
+      },
+      "answer": "B",
+      "explanation": "The Arjuna Award was instituted by the Government of India in 1961 to recognise outstanding achievement by sportspersons. It is named after Arjuna, the legendary archer from the Mahabharata.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 688
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Military Exercises",
+      "question": "Exercise Shakti is a bilateral Army exercise between India and which country?",
+      "options": {
+        "A": "USA",
+        "B": "France",
+        "C": "UK",
+        "D": "Australia"
+      },
+      "answer": "B",
+      "explanation": "Exercise Shakti is a bilateral Army exercise between India and France, held alternately in both countries. It focuses on counter-terrorism and jungle warfare operations in a UN mandate-type environment.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 689
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "International Exercises",
+      "question": "Exercise Malabar is a trilateral naval exercise between India, USA, and which third country that joined permanently in 2020?",
+      "options": {
+        "A": "France",
+        "B": "Australia",
+        "C": "Japan",
+        "D": "UK"
+      },
+      "answer": "B",
+      "explanation": "Exercise Malabar started as an India-US bilateral naval exercise in 1992. Japan joined as a permanent member in 2015, and Australia rejoined permanently in 2020, making it a trilateral QUAD naval exercise.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 690
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Missile Systems",
+      "question": "The Pralay ballistic missile inducted by India is classified as what type of missile?",
+      "options": {
+        "A": "Cruise missile",
+        "B": "Quasi-ballistic surface-to-surface missile",
+        "C": "Anti-ship missile",
+        "D": "Air-to-air missile"
+      },
+      "answer": "B",
+      "explanation": "Pralay is a quasi-ballistic surface-to-surface missile with a range of 150-500 km, developed by DRDO. It can manoeuvre during flight, making it difficult to intercept. It fills the gap between artillery and ballistic missiles.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 691
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Naval Frigates",
+      "question": "Project-17A frigates are an upgrade of which earlier frigate class in the Indian Navy?",
+      "options": {
+        "A": "Project-15 (Delhi class)",
+        "B": "Project-16 (Godavari class)",
+        "C": "Project-17 (Shivalik class)",
+        "D": "Project-25 (Veer class)"
+      },
+      "answer": "C",
+      "explanation": "Project-17A (Nilgiri class) stealth frigates are an upgraded evolution of the Project-17 (Shivalik class). They feature improved stealth, advanced weapons, and higher indigenous content (~75%) compared to Shivalik class.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 692
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Acquisitions",
+      "question": "India signed a deal for MQ-9B Sea Guardian/Sky Guardian drones with which country in 2023?",
+      "options": {
+        "A": "Israel",
+        "B": "USA",
+        "C": "UK",
+        "D": "France"
+      },
+      "answer": "B",
+      "explanation": "India approved the procurement of 31 MQ-9B Predator drones (16 Sky Guardian for Army/Air Force, 15 Sea Guardian for Navy) from General Atomics, USA in 2023 for ISR (Intelligence, Surveillance, Reconnaissance) missions.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 693
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Equipment & Arms",
+      "question": "The ATAGS (Advanced Towed Artillery Gun System) indigenously developed by DRDO and OFB is a how many millimetre calibre gun?",
+      "options": {
+        "A": "105 mm",
+        "B": "130 mm",
+        "C": "155 mm",
+        "D": "203 mm"
+      },
+      "answer": "C",
+      "explanation": "ATAGS is a 155mm/52-calibre advanced towed artillery gun developed indigenously by DRDO and the Ordnance Factory Board. It has a range of 48 km with Base Bleed ammunition and was designed for Indian battlefield conditions.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 694
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Naval Induction",
+      "question": "INS Visakhapatnam is a Project-15B stealth guided missile destroyer. How many ships does Project-15B encompass?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "3"
+      },
+      "answer": "B",
+      "explanation": "Project-15B (Visakhapatnam class) comprises 4 stealthy guided missile destroyers: INS Visakhapatnam, INS Mormugao, INS Imphal, and INS Surat. All are being built at Mazagon Dock Shipbuilders, Mumbai.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 695
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Strategic Roadmap",
+      "question": "India's Defence Production Policy 2020 targets achieving a defence turnover of how much by 2025?",
+      "options": {
+        "A": "₹1 lakh crore",
+        "B": "₹1.75 lakh crore",
+        "C": "₹3 lakh crore",
+        "D": "₹5 lakh crore"
+      },
+      "answer": "B",
+      "explanation": "India's Defence Production Policy 2020 targets achieving a defence turnover of ₹1.75 lakh crore (approximately $25 billion) by 2025, including ₹35,000 crore in defence exports, to make India one of the top global defence producers.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 696
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Air Defence",
+      "question": "The Akash-NG (Next Generation) missile system has an improved range compared to the original Akash. What is the range of Akash-NG?",
+      "options": {
+        "A": "25 km",
+        "B": "35 km",
+        "C": "70 km",
+        "D": "100 km"
+      },
+      "answer": "C",
+      "explanation": "Akash-NG (Next Generation) has a range of approximately 70 km, significantly higher than the original Akash (25 km). It uses active radar homing for terminal guidance and can intercept multiple targets simultaneously.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 697
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Missile Tests",
+      "question": "India successfully tested the Hypersonic Technology Demonstrator Vehicle (HSTDV) in which year?",
+      "options": {
+        "A": "2018",
+        "B": "2019",
+        "C": "2020",
+        "D": "2022"
+      },
+      "answer": "C",
+      "explanation": "India successfully tested the HSTDV in September 2020, with the vehicle achieving hypersonic speeds (Mach 6+) using a scramjet engine. DRDO became one of a few organisations globally to demonstrate this technology.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 698
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Indigenous Assets",
+      "question": "The Arjun Main Battle Tank Mk-1A inducted by the Indian Army is manufactured by which company?",
+      "options": {
+        "A": "DRDO",
+        "B": "L&T Defence",
+        "C": "Heavy Vehicles Factory, Chennai",
+        "D": "Ordnance Factory, Medak"
+      },
+      "answer": "C",
+      "explanation": "The Arjun MBT is manufactured at the Heavy Vehicles Factory (HVF) in Avadi, Chennai, under the Department of Defence Production. It is designed by DRDO's Combat Vehicles Research and Development Establishment (CVRDE).",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 699
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Aviation",
+      "question": "HAL's Advanced Medium Combat Aircraft (AMCA) programme aims to develop India's first 5th-generation stealth fighter. When is the first flight expected?",
+      "options": {
+        "A": "2024",
+        "B": "2026",
+        "C": "2028",
+        "D": "2032"
+      },
+      "answer": "C",
+      "explanation": "HAL's AMCA programme, which received Cabinet approval in 2024, is expected to make its first flight around 2028, with IOC (Initial Operational Clearance) around 2034-35. It features supercruise, internal weapons bay, and stealth shaping.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 700
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Strategic Operations",
+      "question": "The surgical strikes of September 2016 by India were conducted against terrorist launch pads across the LOC in which region?",
+      "options": {
+        "A": "Gilgit-Baltistan",
+        "B": "Pakistan-Occupied Kashmir (PoK)",
+        "C": "Balochistan",
+        "D": "Sindh"
+      },
+      "answer": "B",
+      "explanation": "India conducted surgical strikes on 29 September 2016 against terrorist launch pads in Pakistan-Occupied Kashmir (PoK). The DGMO confirmed strikes were conducted by Indian Special Forces teams that crossed the LOC.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 701
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Appointments",
+      "question": "Who is the current Chief of Naval Staff (CNS) of India as of early 2025?",
+      "options": {
+        "A": "Admiral R. Hari Kumar",
+        "B": "Admiral Dinesh K. Tripathi",
+        "C": "Vice Admiral S.N. Ghormade",
+        "D": "Admiral Karambir Singh"
+      },
+      "answer": "B",
+      "explanation": "Admiral Dinesh K. Tripathi became the Chief of Naval Staff (CNS) of India in April 2024, succeeding Admiral R. Hari Kumar. He previously served as the Vice Chief of Naval Staff.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 702
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Domestic Exercises",
+      "question": "Exercise Trishakti Prahar is a joint training exercise conducted by which command of the Indian Army?",
+      "options": {
+        "A": "Western Command",
+        "B": "Northern Command",
+        "C": "Eastern Command",
+        "D": "Central Command"
+      },
+      "answer": "C",
+      "explanation": "Exercise Trishakti Prahar is conducted by the Eastern Command of the Indian Army, focusing on integrated operations in the eastern border regions. It involves joint training with the Indian Air Force in simulated combat scenarios.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 703
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Unmanned Systems",
+      "question": "India's first indigenously developed armed drone, cleared for production, is the which model?",
+      "options": {
+        "A": "Rustom-2",
+        "B": "Archer NG",
+        "C": "CATS Warrior",
+        "D": "Tapas BH-201"
+      },
+      "answer": "D",
+      "explanation": "Tapas BH-201 (MALE UAV, Rustom-2 series) received clearance from DGAQA and CEMILAC for limited series production in 2023. It is a Medium Altitude Long Endurance UAV developed by DRDO's ADE, Bengaluru.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 704
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Equipment & Procurement",
+      "question": "The Aatmanirbhar Bharat initiative in defence introduced a 'Positive Indigenisation List'. What does this list specify?",
+      "options": {
+        "A": "Items to be exported",
+        "B": "Items that can only be procured from Indian sources",
+        "C": "Items banned from import",
+        "D": "Items for which FDI is allowed"
+      },
+      "answer": "B",
+      "explanation": "The Positive Indigenisation List (PIL) specifies defence items that can only be procured from Indian sources (public or private). Six PILs have been released covering over 500 items to boost indigenous defence manufacturing.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 705
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Ballistic Missiles",
+      "question": "The Agni-V missile uses a MIRV (Multiple Independently Targetable Re-entry Vehicle) payload. India successfully tested MIRV capability under which mission name?",
+      "options": {
+        "A": "Mission Divyastra",
+        "B": "Mission Shakti",
+        "C": "Mission Prahar",
+        "D": "Mission Agni"
+      },
+      "answer": "A",
+      "explanation": "India demonstrated MIRV capability on Agni-V under Mission Divyastra in March 2024. PM Modi announced that India had joined an elite group of nations with MIRV technology, allowing a single missile to strike multiple targets.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 706
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Maritime Assets",
+      "question": "India's first nuclear-powered attack submarine (SSN) is planned under which project?",
+      "options": {
+        "A": "ATV (Advanced Technology Vessel)",
+        "B": "Project-75I",
+        "C": "Project S5",
+        "D": "Project SSN-X"
+      },
+      "answer": "A",
+      "explanation": "India's nuclear-powered attack submarine (SSN) programme falls under the Advanced Technology Vessel (ATV) project, which also produced the Arihant-class SSBNs. A dedicated SSN with conventional weapons (non-nuclear) is under development.",
+      "difficulty": "Hard",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 707
+    },
+    {
+      "category": "Defence Current Affairs",
+      "subtopic": "Coast Guard",
+      "question": "India's Coast Guard is the maritime law enforcement and search-and-rescue agency. It functions under which ministry?",
+      "options": {
+        "A": "Ministry of Home Affairs",
+        "B": "Ministry of Defence",
+        "C": "Ministry of Ports, Shipping & Waterways",
+        "D": "Ministry of External Affairs"
+      },
+      "answer": "B",
+      "explanation": "The Indian Coast Guard (ICG) functions under the Ministry of Defence, unlike many other countries where it falls under Home Affairs or Transport. It was established in 1978 under the Coast Guard Act, 1978.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 708
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Bilateral Relations",
+      "question": "India and Australia signed a Comprehensive Economic Cooperation Agreement (CECA) in which year?",
+      "options": {
+        "A": "2020",
+        "B": "2022",
+        "C": "2023",
+        "D": "2024"
+      },
+      "answer": "B",
+      "explanation": "India and Australia signed the Australia-India Economic Cooperation and Trade Agreement (AI-ECTA) in April 2022, entering into force from December 2022. It covers goods, services, and investment liberalisation.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 709
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Strategic Pacts",
+      "question": "India's 'Act West Policy' focuses on deepening ties with the Gulf Cooperation Council (GCC). The GCC has how many member states?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "answer": "C",
+      "explanation": "The Gulf Cooperation Council (GCC) has six member states: Saudi Arabia, UAE, Qatar, Kuwait, Bahrain, and Oman. The GCC is a significant partner for India in terms of trade, energy, and the Indian diaspora (~8.5 million Indians).",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 710
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Summits",
+      "question": "The EAM S. Jaishankar articulated India's position in the Russia-Ukraine conflict saying India is not on the fence but on the side of what?",
+      "options": {
+        "A": "NATO",
+        "B": "Russia",
+        "C": "Peace",
+        "D": "Neutrality"
+      },
+      "answer": "C",
+      "explanation": "EAM Jaishankar articulated India's position as 'not on the fence but on the side of peace', clarifying that abstaining on UNSC votes does not mean indifference — India actively pushes for dialogue and diplomatic solutions.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Conceptual",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 711
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Politics",
+      "question": "India's 'Vasudhaiva Kutumbakam' (the world is one family) theme was adopted during which global presidency?",
+      "options": {
+        "A": "G20 Presidency 2023",
+        "B": "SCO Chairmanship 2023",
+        "C": "BRICS Chairmanship 2021",
+        "D": "UN Security Council 2021"
+      },
+      "answer": "A",
+      "explanation": "'Vasudhaiva Kutumbakam — One Earth, One Family, One Future' was the theme of India's G20 Presidency in 2023. The phrase from the Maha Upanishad encapsulates India's vision of global cooperation and inclusive development.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 712
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Trade Agreements",
+      "question": "India withdrew from the RCEP (Regional Comprehensive Economic Partnership) negotiations in 2019. RCEP is a trade bloc involving ASEAN + which major economies?",
+      "options": {
+        "A": "India, China, Japan, South Korea, Australia, New Zealand",
+        "B": "China, Japan, South Korea, Australia, New Zealand",
+        "C": "China, USA, Japan, South Korea",
+        "D": "Australia, Japan, UK, Canada"
+      },
+      "answer": "B",
+      "explanation": "RCEP includes all 10 ASEAN nations plus China, Japan, South Korea, Australia, and New Zealand — 15 nations total. India opted out in 2019 citing concerns about trade deficits (especially with China) and agricultural protection.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 713
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Neighborhood",
+      "question": "India's largest trading partner among SAARC nations is which country?",
+      "options": {
+        "A": "Bangladesh",
+        "B": "Sri Lanka",
+        "C": "Pakistan",
+        "D": "Nepal"
+      },
+      "answer": "A",
+      "explanation": "Bangladesh is India's largest trading partner within SAARC, with bilateral trade exceeding $12 billion. India-Bangladesh ties have been strong due to cultural links, the 1971 liberation war, and significant connectivity projects.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 714
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Maritime Cooperation",
+      "question": "India's SAGAR (Security and Growth for All in the Region) doctrine was articulated by PM Modi for which ocean?",
+      "options": {
+        "A": "Pacific Ocean",
+        "B": "Arctic Ocean",
+        "C": "Indian Ocean",
+        "D": "Atlantic Ocean"
+      },
+      "answer": "C",
+      "explanation": "SAGAR — Security and Growth for All in the Region — was articulated by PM Modi in 2015 during his Mauritius visit as India's vision for the Indian Ocean Region, emphasising maritime security, cooperation, and blue economy.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 715
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Treaties & Pacts",
+      "question": "The IPEF (Indo-Pacific Economic Framework) was launched in 2022. India is a member but opted out of which IPEF pillar?",
+      "options": {
+        "A": "Supply Chains (Pillar II)",
+        "B": "Clean Economy (Pillar III)",
+        "C": "Trade (Pillar I)",
+        "D": "Fair Economy (Pillar IV)"
+      },
+      "answer": "C",
+      "explanation": "India joined IPEF in 2022 but opted out of the Trade pillar (Pillar I), citing concerns about market access commitments and labour/environment standards. India participates in Pillars II (supply chains), III (clean economy), and IV (fair economy).",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 716
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Global Awards",
+      "question": "India was elected to chair the UN Human Rights Council in 2024. India's term on the HRC covers which period?",
+      "options": {
+        "A": "2022-2024",
+        "B": "2024-2026",
+        "C": "2023-2025",
+        "D": "2025-2027"
+      },
+      "answer": "B",
+      "explanation": "India was elected to the UN Human Rights Council for the period 2022-2024 and subsequently for 2024-2026, reflecting India's growing stature in global governance. India has been an active participant in HRC debates.",
+      "difficulty": "Hard",
+      "priority": "Low",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 2,
+      "ta_repeat_probability": "Low",
+      "question_nature": "Dynamic",
+      "id": 717
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "ASEAN",
+      "question": "India's connectivity project, the Trilateral Highway, links India with Myanmar and which third country?",
+      "options": {
+        "A": "Bangladesh",
+        "B": "Thailand",
+        "C": "Vietnam",
+        "D": "Laos"
+      },
+      "answer": "B",
+      "explanation": "India-Myanmar-Thailand Trilateral Highway links Moreh (India) through Myanmar to Mae Sot (Thailand). It aims to enhance road connectivity for India's Act East Policy and boost trade with Southeast Asia.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 718
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Middle East Crisis",
+      "question": "India's Operation Kaveri (2023) evacuated Indian nationals from which country undergoing civil conflict?",
+      "options": {
+        "A": "Libya",
+        "B": "Ethiopia",
+        "C": "Sudan",
+        "D": "Yemen"
+      },
+      "answer": "C",
+      "explanation": "Operation Kaveri was launched in April 2023 to evacuate over 3,800 Indian nationals from Sudan following the outbreak of armed conflict between the Sudanese Armed Forces and the Rapid Support Forces (RSF).",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 719
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "SCO",
+      "question": "The SCO (Shanghai Cooperation Organisation) was founded in 2001. Which two South Asian countries joined SCO as full members in 2017?",
+      "options": {
+        "A": "Afghanistan and Bangladesh",
+        "B": "India and Pakistan",
+        "C": "Sri Lanka and Nepal",
+        "D": "India and Iran"
+      },
+      "answer": "B",
+      "explanation": "India and Pakistan became full members of the SCO in June 2017 at the Astana Summit. Iran joined as a full member in 2023. The SCO also includes China, Russia, Kazakhstan, Kyrgyzstan, Tajikistan, and Uzbekistan.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 720
+    },
+    {
+      "category": "International Relations",
+      "subtopic": "Diplomacy",
+      "question": "India has the world's largest diaspora. How many people of Indian origin live abroad approximately?",
+      "options": {
+        "A": "10 million",
+        "B": "18 million",
+        "C": "25 million",
+        "D": "32 million"
+      },
+      "answer": "D",
+      "explanation": "India has the world's largest diaspora with approximately 32 million people of Indian origin (PIOs and NRIs) living abroad. Key destinations include the USA, UAE, UK, Saudi Arabia, Kuwait, and Malaysia. Remittances (~$120 billion in 2023) are a major economic resource.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 721
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Reports & Indices",
+      "question": "India's rank in the Global Innovation Index (GII) 2023 was what, reflecting its growing innovation ecosystem?",
+      "options": {
+        "A": "30th",
+        "B": "40th",
+        "C": "47th",
+        "D": "55th"
+      },
+      "answer": "B",
+      "explanation": "India ranked 40th in the Global Innovation Index 2023, published by WIPO. India has risen significantly in GII rankings from 81st in 2015. It ranked 1st among lower-middle-income economies and in Central and South Asia.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 722
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Digital Infrastructure",
+      "question": "India Stack refers to the collection of open APIs enabling digital public infrastructure. Which is NOT part of India Stack?",
+      "options": {
+        "A": "Aadhaar",
+        "B": "UPI",
+        "C": "DigiLocker",
+        "D": "ONDC"
+      },
+      "answer": "D",
+      "explanation": "India Stack comprises Aadhaar (identity), UPI (payments), DigiLocker (documents), and eSign. ONDC (Open Network for Digital Commerce) is a separate initiative to democratise e-commerce, not officially part of core India Stack.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Elimination/exception",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 723
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Digital Assets",
+      "question": "The RBI's Digital Payments Index (DPI) measures the penetration of digital payments. The base year for DPI is?",
+      "options": {
+        "A": "2014",
+        "B": "2017",
+        "C": "2019",
+        "D": "2021"
+      },
+      "answer": "C",
+      "explanation": "The RBI's Digital Payments Index (DPI) was constructed with March 2018 as the base period (index = 100). The DPI measures the extent of digitalisation of payments across India using five key parameters.",
+      "difficulty": "Hard",
+      "priority": "Low",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 2,
+      "ta_repeat_probability": "Low",
+      "question_nature": "Static",
+      "id": 724
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Trade Pacts",
+      "question": "India and UK FTA negotiations have been ongoing. The key sticking point has been India's demand for what?",
+      "options": {
+        "A": "Tech transfer",
+        "B": "Easier visas for skilled Indian workers",
+        "C": "Defence cooperation clause",
+        "D": "Agriculture market access"
+      },
+      "answer": "B",
+      "explanation": "A key sticking point in India-UK FTA negotiations has been India's demand for more liberal mobility provisions — easier temporary visas for skilled Indian workers (IT professionals, healthcare workers) in the UK.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Conceptual",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 725
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Budget Highlights",
+      "question": "India's 'Amrit Kaal' is the 25-year period from 2022 to 2047. The first Budget of Amrit Kaal (2022-23) had a capital expenditure outlay of approximately how much?",
+      "options": {
+        "A": "₹5.54 lakh crore",
+        "B": "₹7.5 lakh crore",
+        "C": "₹10 lakh crore",
+        "D": "₹3.5 lakh crore"
+      },
+      "answer": "B",
+      "explanation": "The Union Budget 2023-24 had a capital expenditure outlay of ₹10 lakh crore (33% increase from 2022-23's ₹7.5 lakh crore). The Budget 2022-23 had ₹7.5 lakh crore capex, a significant 35% jump from the previous year.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 726
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Energy",
+      "question": "India became the world's third-largest producer of electricity from renewable sources in 2023. Which two countries lead India?",
+      "options": {
+        "A": "USA and Germany",
+        "B": "China and USA",
+        "C": "China and Europe (EU)",
+        "D": "USA and Japan"
+      },
+      "answer": "B",
+      "explanation": "China is the world's largest renewable electricity producer, followed by the USA, with India in 3rd place. India's rapid solar and wind expansion, particularly under schemes like KUSUM and offshore wind, drives this growth.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 727
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Budget Projects",
+      "question": "The PM Internship Scheme announced in Union Budget 2024-25 targets providing internship opportunities to how many youth over five years?",
+      "options": {
+        "A": "10 lakh",
+        "B": "50 lakh",
+        "C": "1 crore",
+        "D": "2 crore"
+      },
+      "answer": "C",
+      "explanation": "The PM Internship Scheme announced in Budget 2024-25 aims to provide internship opportunities in top 500 companies to 1 crore youth over five years, providing ₹5,000/month allowance and ₹6,000 one-time assistance.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 728
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Trade Corridors",
+      "question": "The Chabahar Port in Iran is being developed by India to access which landlocked region?",
+      "options": {
+        "A": "Central Asia and Afghanistan",
+        "B": "Middle East",
+        "C": "Russia",
+        "D": "East Africa"
+      },
+      "answer": "A",
+      "explanation": "India is developing Chabahar Port in southeastern Iran to gain access to Afghanistan and Central Asia, bypassing Pakistan. In 2024, India and Iran signed a 10-year agreement for operation of the Shahid Beheshti terminal.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 729
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Budgets/Policy",
+      "question": "The Unified Pension Scheme (UPS) announced in 2024 guarantees pension of what percentage of last drawn salary after 25 years of service?",
+      "options": {
+        "A": "40%",
+        "B": "50%",
+        "C": "60%",
+        "D": "75%"
+      },
+      "answer": "B",
+      "explanation": "The Unified Pension Scheme (UPS), approved in August 2024 for central government employees, guarantees an assured pension of 50% of the average basic pay drawn over the last 12 months before superannuation, after at least 25 years of qualifying service.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 730
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Policy",
+      "question": "What is the primary objective of the Production Linked Incentive (PLI) scheme in India?",
+      "options": {
+        "A": "Increase agricultural output",
+        "B": "Boost domestic manufacturing and exports",
+        "C": "Provide financial inclusion",
+        "D": "Develop infrastructure"
+      },
+      "answer": "B",
+      "explanation": "The PLI scheme provides financial incentives to companies for incremental sales from products manufactured in India. Its objectives are to boost domestic manufacturing, attract investment, enhance India's global competitiveness, and increase exports.",
+      "difficulty": "Easy",
+      "priority": "Medium",
+      "pattern_type": "Conceptual",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 731
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Global Indices",
+      "question": "India's ranking in the World Press Freedom Index 2024 (published by RSF) placed India approximately at which position globally?",
+      "options": {
+        "A": "51st",
+        "B": "75th",
+        "C": "100th",
+        "D": "159th"
+      },
+      "answer": "D",
+      "explanation": "India ranked 159th out of 180 countries in the World Press Freedom Index 2024 published by RSF (Reporters Without Borders). India's ranking has been a subject of debate between the government and press freedom organisations.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 732
+    },
+    {
+      "category": "Economy Current Affairs",
+      "subtopic": "Indices & Reports",
+      "question": "The Ease of Living Index is published in India by which ministry to assess quality of life in cities?",
+      "options": {
+        "A": "NITI Aayog",
+        "B": "Ministry of Housing and Urban Affairs",
+        "C": "Ministry of Statistics",
+        "D": "Ministry of Finance"
+      },
+      "answer": "B",
+      "explanation": "The Ease of Living Index (EoLI) is an assessment tool developed by the Ministry of Housing and Urban Affairs to evaluate the quality of life and the urban development of cities across India.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 733
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Space Infrastructure",
+      "question": "ISRO's PSLV-C60 mission in December 2024 launched the Space Docking Experiment (SpaDeX). What technology was demonstrated?",
+      "options": {
+        "A": "Lunar landing",
+        "B": "Orbital docking of two spacecraft",
+        "C": "Deep space communication",
+        "D": "Solar sail deployment"
+      },
+      "answer": "B",
+      "explanation": "SpaDeX (Space Docking Experiment) demonstrated autonomous orbital docking between two small spacecraft — SDX-01 (Chaser) and SDX-02 (Target) — in January 2025, making India the 4th country to achieve on-orbit docking.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 734
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "AI",
+      "question": "India's Digital Personal Data Protection Act (DPDPA) was passed in which year?",
+      "options": {
+        "A": "2021",
+        "B": "2022",
+        "C": "2023",
+        "D": "2024"
+      },
+      "answer": "C",
+      "explanation": "India's Digital Personal Data Protection Act (DPDPA) 2023 was passed by Parliament in August 2023. It establishes a framework for processing digital personal data, rights of data principals, and obligations of data fiduciaries.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 735
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Quantum Computing",
+      "question": "The C-DOT (Centre for Development of Telematics) successfully demonstrated India's first indigenous Quantum Key Distribution (QKD) link in which year?",
+      "options": {
+        "A": "2021",
+        "B": "2022",
+        "C": "2023",
+        "D": "2024"
+      },
+      "answer": "C",
+      "explanation": "C-DOT demonstrated India's first indigenous Quantum Key Distribution (QKD) link in 2023, enabling theoretically unbreakable quantum-encrypted communication. This is critical for secure government and military communications.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 736
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Space Missions",
+      "question": "India's Reusable Launch Vehicle Technology Demonstrator (RLV-TD) is being developed to create what capability?",
+      "options": {
+        "A": "Nuclear-powered rockets",
+        "B": "Spacecraft that can land and be reused",
+        "C": "Single-stage-to-orbit vehicles",
+        "D": "Ion propulsion systems"
+      },
+      "answer": "B",
+      "explanation": "RLV-TD is ISRO's technology demonstrator for a reusable launch vehicle — a winged spacecraft that can re-enter the atmosphere and land horizontally, then be refurbished and relaunched, reducing launch costs significantly.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 737
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Environment",
+      "question": "India's National Action Plan on Climate Change (NAPCC) has 8 National Missions. Which mission addresses water resources?",
+      "options": {
+        "A": "National Solar Mission",
+        "B": "National Water Mission",
+        "C": "National Mission for Enhanced Energy Efficiency",
+        "D": "National Mission for Sustainable Agriculture"
+      },
+      "answer": "B",
+      "explanation": "NAPCC's 8 missions include: National Solar Mission, National Mission for Enhanced Energy Efficiency, National Mission on Sustainable Habitat, National Water Mission, National Mission for Sustaining the Himalayan Ecosystem, etc.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Static",
+      "id": 738
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Health",
+      "question": "India eliminated which disease in 2023, becoming certified by WHO as the first country in South-East Asia to do so?",
+      "options": {
+        "A": "Polio",
+        "B": "Measles",
+        "C": "Trachoma",
+        "D": "Sleeping sickness"
+      },
+      "answer": "C",
+      "explanation": "India was certified by WHO in 2023 as having eliminated Trachoma (a bacterial eye infection) as a public health problem, the first country in the WHO South-East Asia Region to achieve this milestone.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 739
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Technology Missions",
+      "question": "The National Research Foundation (NRF) established in India in 2023 replaces which earlier science funding body?",
+      "options": {
+        "A": "DST",
+        "B": "CSIR",
+        "C": "SERB (Science & Engineering Research Board)",
+        "D": "DBT"
+      },
+      "answer": "C",
+      "explanation": "The National Research Foundation (NRF) Act 2023 established the NRF to fund, coordinate and promote scientific research in India. It subsumes the Science and Engineering Research Board (SERB) and has a budget of ₹50,000 crore over 5 years.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 740
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Infrastructure",
+      "question": "The BharatNet project aims to provide broadband connectivity to how many gram panchayats?",
+      "options": {
+        "A": "1 lakh",
+        "B": "2 lakh",
+        "C": "2.5 lakh",
+        "D": "5 lakh"
+      },
+      "answer": "C",
+      "explanation": "BharatNet aims to provide broadband connectivity to all 2.5 lakh gram panchayats across India with at least 100 Mbps bandwidth. It uses optical fibre, radio, and satellite technology for last-mile connectivity.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 741
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Artificial Intelligence",
+      "question": "India's AI supercomputer 'AIRAWAT' was set up where and recognised by TOP500 global list?",
+      "options": {
+        "A": "IIT Delhi",
+        "B": "C-DAC Pune",
+        "C": "IISc Bengaluru",
+        "D": "TIFR Mumbai"
+      },
+      "answer": "B",
+      "explanation": "AIRAWAT (AI Research, Analytics and Knowledge Assimilation Platform) AI supercomputer was set up at C-DAC Pune and featured in the TOP500 global supercomputer list in 2023. It supports AI research across India.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 742
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Quantum Tech",
+      "question": "India's first quantum computing-based telecom network was demonstrated between which two cities?",
+      "options": {
+        "A": "Mumbai-Pune",
+        "B": "Delhi-Jaipur",
+        "C": "Hyderabad-Warangal",
+        "D": "Sanand-Ahmedabad"
+      },
+      "answer": "D",
+      "explanation": "India's first quantum computing-based telecom network using QKD (Quantum Key Distribution) was demonstrated between Sanand and Ahmedabad in Gujarat in 2023, covering a distance of ~50 km over optical fibre.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 743
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Deep-Sea Exploration",
+      "question": "Matsya 6000 is India's deep-sea manned submersible being developed for the Deep Ocean Mission. What depth is it designed to reach?",
+      "options": {
+        "A": "500 metres",
+        "B": "2,000 metres",
+        "C": "6,000 metres",
+        "D": "11,000 metres"
+      },
+      "answer": "C",
+      "explanation": "Matsya 6000 is being developed under India's Deep Ocean Mission to carry 3 scientists to a depth of 6,000 metres in the ocean to study the seabed and conduct scientific research on polymetallic nodules.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 744
+    },
+    {
+      "category": "Science & Tech",
+      "subtopic": "Space Policy",
+      "question": "The Indian Space Policy 2023 allows private companies to undertake end-to-end space activities. What percentage FDI is allowed in the satellite manufacturing sector?",
+      "options": {
+        "A": "49%",
+        "B": "74%",
+        "C": "100%",
+        "D": "51%"
+      },
+      "answer": "C",
+      "explanation": "India's Space Policy 2023 and FDI liberalisation allows 100% FDI in satellite manufacturing and operations under the government route. This aims to attract global space companies to manufacture in India.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 745
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Climate Change",
+      "question": "India declared which year as the hottest year on record, with average temperatures breaching 1.5°C above pre-industrial levels?",
+      "options": {
+        "A": "2022",
+        "B": "2023",
+        "C": "2024",
+        "D": "2025"
+      },
+      "answer": "C",
+      "explanation": "2024 was officially declared the hottest year on record globally, with average temperatures briefly exceeding 1.5°C above pre-industrial levels for the first time on an annual basis, according to Copernicus and WMO reports.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 746
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Policy",
+      "question": "India's National Biofuel Policy 2022 targets blending of 20% ethanol in petrol by which year?",
+      "options": {
+        "A": "2025",
+        "B": "2026",
+        "C": "2030",
+        "D": "2047"
+      },
+      "answer": "A",
+      "explanation": "India's National Biofuel Policy 2018 (revised 2022) advanced the target of 20% ethanol blending in petrol from 2030 to 2025. India crossed 10% blending milestone in 2022, a year ahead of schedule.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 747
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Sustainable Energy",
+      "question": "Which state in India leads in solar energy installed capacity as of 2024?",
+      "options": {
+        "A": "Gujarat",
+        "B": "Tamil Nadu",
+        "C": "Rajasthan",
+        "D": "Andhra Pradesh"
+      },
+      "answer": "C",
+      "explanation": "Rajasthan leads India in solar energy installed capacity with over 22 GW as of 2024, benefiting from high solar irradiation in the Thar Desert region. It hosts the Bhadla Solar Park, one of the world's largest.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 748
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Agreements",
+      "question": "India ratified the Kigali Amendment to the Montreal Protocol, committing to phase down which substance?",
+      "options": {
+        "A": "CFCs",
+        "B": "Hydrofluorocarbons (HFCs)",
+        "C": "Nitrous Oxide",
+        "D": "Methane"
+      },
+      "answer": "B",
+      "explanation": "The Kigali Amendment (2016) to the Montreal Protocol commits countries to phase down production and consumption of HFCs (Hydrofluorocarbons), potent greenhouse gases used in refrigeration and air conditioning. India ratified it in 2021.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 749
+    },
+    {
+      "category": "Environment Current Affairs",
+      "subtopic": "Green Energy",
+      "question": "India's National Hydrogen Mission targets exporting green hydrogen to become a net exporter. The mission is led by which ministry?",
+      "options": {
+        "A": "Ministry of Environment",
+        "B": "Ministry of New and Renewable Energy",
+        "C": "Ministry of Petroleum",
+        "D": "Ministry of Science & Technology"
+      },
+      "answer": "B",
+      "explanation": "India's National Green Hydrogen Mission (2023) is led by the Ministry of New and Renewable Energy (MNRE). It targets making India a global hub for green hydrogen production and export, with a ₹19,744 crore initial outlay.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 750
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Nobel Prize",
+      "question": "The Nobel Prize in Economics (2024) was awarded for research on which topic relevant to global development?",
+      "options": {
+        "A": "Climate economics",
+        "B": "Why nations fail — institutions and prosperity",
+        "C": "AI and economic modelling",
+        "D": "Global trade theory"
+      },
+      "answer": "B",
+      "explanation": "The 2024 Nobel Prize in Economic Sciences was awarded to Daron Acemoglu, Simon Johnson, and James A. Robinson for studies on how institutions are formed and affect prosperity — building on their 'Why Nations Fail' research.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 751
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Literature",
+      "question": "The Nobel Prize in Literature 2024 was awarded to which author, known for 'The Vegetarian'?",
+      "options": {
+        "A": "Olga Tokarczuk",
+        "B": "Han Kang",
+        "C": "Salman Rushdie",
+        "D": "Arundhati Roy"
+      },
+      "answer": "B",
+      "explanation": "Han Kang (South Korea) won the Nobel Prize in Literature 2024 for 'her intense poetic prose that confronts historical traumas and exposes the fragility of human life.' She is known for novels including 'The Vegetarian' and 'Human Acts'.",
+      "difficulty": "Easy",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 752
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Military Awards",
+      "question": "The Sena Medal is awarded to Army personnel for gallantry or distinguished service. It is awarded in how many categories?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "A",
+      "explanation": "The Sena Medal is awarded in two categories: Gallantry (for acts of bravery or courage in the face of the enemy or the enemy's forces) and Distinguished Service (for outstanding service by non-officer and officer ranks).",
+      "difficulty": "Hard",
+      "priority": "Low",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 2,
+      "ta_repeat_probability": "Low",
+      "question_nature": "Static",
+      "id": 753
+    },
+    {
+      "category": "Awards & Honors",
+      "subtopic": "Gallantry Awards",
+      "question": "The Ashoka Chakra is India's highest peacetime gallantry award. It is awarded for acts of bravery in which context?",
+      "options": {
+        "A": "Wartime operations only",
+        "B": "Counter-insurgency operations",
+        "C": "Acts of gallantry not in the face of the enemy",
+        "D": "International peacekeeping"
+      },
+      "answer": "C",
+      "explanation": "The Ashoka Chakra is India's highest peacetime gallantry award, given for acts of bravery, courage, and self-sacrifice away from the battlefield — not in direct confrontation with an enemy. It can be awarded posthumously.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Static",
+      "id": 754
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Military Rank",
+      "question": "According to SIPRI's Military Expenditure Database 2024, India ranks as the world's how-many-th largest defence spender?",
+      "options": {
+        "A": "2nd",
+        "B": "3rd",
+        "C": "4th",
+        "D": "5th"
+      },
+      "answer": "C",
+      "explanation": "According to SIPRI 2024, India is the world's 4th largest defence spender after the USA, China, and Russia, with defence expenditure of approximately $83 billion. India consistently ranks in the top 5 globally.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 755
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Economy",
+      "question": "India's nominal GDP is estimated to cross what figure by FY2025-26, making it the 4th largest economy?",
+      "options": {
+        "A": "$3 trillion",
+        "B": "$3.5 trillion",
+        "C": "$4 trillion",
+        "D": "$4.5 trillion"
+      },
+      "answer": "C",
+      "explanation": "India's nominal GDP is projected to cross $4 trillion in FY2025-26, which would make India the 4th largest economy globally (overtaking Japan), up from 5th position. India targets $5 trillion GDP by 2027-28.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 5,
+      "ta_repeat_probability": "Very High",
+      "question_nature": "Dynamic",
+      "id": 756
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Climate Change",
+      "question": "The Global Climate Risk Index (CRI) published by Germanwatch ranks countries by climate vulnerability. India typically appears in the top how-many most affected nations?",
+      "options": {
+        "A": "Top 5",
+        "B": "Top 10",
+        "C": "Top 20",
+        "D": "Top 50"
+      },
+      "answer": "B",
+      "explanation": "India consistently appears in the top 10 most climate-affected countries in Germanwatch's Global Climate Risk Index, reflecting its vulnerability to extreme weather events including cyclones, floods, droughts, and heatwaves.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 757
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Media",
+      "question": "India's Human Development Index (HDI) rank in UNDP's Human Development Report 2023-24 placed India at approximately which position?",
+      "options": {
+        "A": "111th",
+        "B": "134th",
+        "C": "142nd",
+        "D": "160th"
+      },
+      "answer": "B",
+      "explanation": "India ranked 134th out of 193 countries in the UNDP Human Development Report 2023-24 with an HDI value of 0.644, categorised as 'Medium Human Development'. India has improved from 132nd, reflecting progress in education and health.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 758
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Economy",
+      "question": "The IMF's World Economic Outlook projects India's share of global GDP (PPP) to reach approximately what percentage by 2027?",
+      "options": {
+        "A": "5%",
+        "B": "7%",
+        "C": "9%",
+        "D": "11%"
+      },
+      "answer": "C",
+      "explanation": "India's share of global GDP (PPP terms) is projected to reach approximately 9% by 2027, up from around 7.5% in 2023. China's share is ~19% and USA's ~15%, making India's economic rise globally significant.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 759
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Military Rank",
+      "question": "India is the world's largest arms importer according to SIPRI. What share of global arms imports does India account for approximately?",
+      "options": {
+        "A": "5%",
+        "B": "9%",
+        "C": "15%",
+        "D": "20%"
+      },
+      "answer": "B",
+      "explanation": "According to SIPRI's Trends in International Arms Transfers, India accounts for approximately 9-10% of global arms imports (2019-2023), making it the world's largest arms importer — reflecting its ongoing modernisation and limited indigenous production.",
+      "difficulty": "Moderate",
+      "priority": "High",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 4,
+      "ta_repeat_probability": "High",
+      "question_nature": "Dynamic",
+      "id": 760
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Economy",
+      "question": "India's Hunger Index rank in the Global Hunger Index (GHI) 2023 placed India at which position?",
+      "options": {
+        "A": "67th",
+        "B": "88th",
+        "C": "111th",
+        "D": "125th"
+      },
+      "answer": "C",
+      "explanation": "India ranked 111th out of 125 countries in the Global Hunger Index (GHI) 2023, with a GHI score of 28.7 categorised as 'serious'. The government contests the methodology of the GHI, calling it flawed.",
+      "difficulty": "Moderate",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 761
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Economy",
+      "question": "India's Logistics Performance Index (LPI) 2023 rank by World Bank showed India at which position?",
+      "options": {
+        "A": "24th",
+        "B": "38th",
+        "C": "55th",
+        "D": "71st"
+      },
+      "answer": "B",
+      "explanation": "India ranked 38th in the World Bank's Logistics Performance Index (LPI) 2023, significantly improved from 44th in 2018. The improvement reflects investments in infrastructure, digitisation of customs, and logistics modernisation under NLP 2022.",
+      "difficulty": "Hard",
+      "priority": "Medium",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 3,
+      "ta_repeat_probability": "Medium",
+      "question_nature": "Dynamic",
+      "id": 762
+    },
+    {
+      "category": "Reports & Indices",
+      "subtopic": "Economy",
+      "question": "India's rank in the Global Competitiveness Index (GCI) 2019 (last edition before WEF revised the framework) was approximately at which position?",
+      "options": {
+        "A": "43rd",
+        "B": "58th",
+        "C": "68th",
+        "D": "77th"
+      },
+      "answer": "C",
+      "explanation": "India ranked 68th in the World Economic Forum's Global Competitiveness Index 2019, slightly down from 58th in 2017. The WEF replaced GCI with a new framework, so 2019 was the last comparable edition.",
+      "difficulty": "Hard",
+      "priority": "Low",
+      "pattern_type": "Direct factual recall",
+      "revision_weight": 2,
+      "ta_repeat_probability": "Low",
+      "question_nature": "Static",
+      "id": 763
     }
   ]
 }
