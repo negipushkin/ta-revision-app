@@ -119,6 +119,16 @@ export default function RevisionScreen({ setScreen }) {
           ← Prev
         </button>
         <button
+          onClick={() => {
+            setPageIndex(0)
+            answeredInPair.current = seedAnswered(filteredQuestions.slice(0, 2))
+          }}
+          disabled={pageIndex === 0}
+          className="h-11 px-4 rounded-xl border border-slate-600 text-slate-300 text-sm font-medium disabled:opacity-30 active:bg-slate-700 transition-colors"
+        >
+          Home
+        </button>
+        <button
           onClick={goNext}
           disabled={isLastPair || filteredQuestions.length === 0}
           className="flex-1 h-11 rounded-xl bg-indigo-600 text-white text-sm font-semibold disabled:opacity-30 active:bg-indigo-700 transition-colors"
