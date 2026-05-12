@@ -7,7 +7,7 @@ export default function QuestionPair({ questions, onAnswer }) {
         <QuestionCard
           key={questions[0].id}
           question={questions[0]}
-          onAnswer={(isCorrect) => onAnswer(questions[0].id, isCorrect)}
+          onAnswer={(isCorrect, sel) => onAnswer(questions[0].id, isCorrect, sel)}
         />
       )}
       {questions[1] && (
@@ -16,7 +16,7 @@ export default function QuestionPair({ questions, onAnswer }) {
           <QuestionCard
             key={questions[1].id}
             question={questions[1]}
-            onAnswer={(isCorrect) => onAnswer(questions[1].id, isCorrect)}
+            onAnswer={(isCorrect, sel) => onAnswer(questions[1].id, isCorrect, sel)}
           />
         </>
       )}

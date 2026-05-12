@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { getProgress } from '../store/progressStore'
 
 const DIFFICULTY_COLORS = {
   Easy: 'text-emerald-400 bg-emerald-400/10',
@@ -9,14 +10,15 @@ const DIFFICULTY_COLORS = {
 const OPTION_LABELS = ['A', 'B', 'C', 'D']
 
 export default function QuestionCard({ question, onAnswer }) {
-  const [selected, setSelected] = useState(null)
-  const [revealed, setRevealed] = useState(false)
+  const saved = getProgress()[question.id]
+  const [selected, setSelected] = useState(saved?.selectedOption ?? null)
+  const [revealed, setRevealed] = useState(!!saved?.attempted)
 
   const handleCheck = () => {
     if (!selected || revealed) return
     setRevealed(true)
     const isCorrect = selected === question.answer
-    onAnswer(isCorrect)
+    onAnswer(isCorrect, selected)
   }
 
   const optionStyle = (label) => {

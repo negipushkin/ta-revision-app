@@ -1,10 +1,15 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import useQuestions from '../data/useQuestions'
-import { markAnswer, getStats } from '../store/progressStore'
+import { markAnswer, getStats, getProgress } from '../store/progressStore'
 import NavBar from '../components/NavBar'
 import ProgressBar from '../components/ProgressBar'
 import QuestionPair from '../components/QuestionPair'
 import FilterSheet from '../components/FilterSheet'
+
+function seedAnswered(pair) {
+  const progress = getProgress()
+  return new Set(pair.filter(q => progress[q.id]?.attempted).map(q => q.id))
+}
 
 export default function RevisionScreen({ setScreen }) {
   const { allQuestions, filteredQuestions, filters, setFilters, allSubtopics } = useQuestions()
@@ -12,7 +17,6 @@ export default function RevisionScreen({ setScreen }) {
   const [filterSheetOpen, setFilterSheetOpen] = useState(false)
   const [stats, setStats] = useState({ attempted: 0, correct: 0, total: 0 })
   const answeredInPair = useRef(new Set())
-  const pairKey = useRef(pageIndex)
 
   useEffect(() => {
     setStats(getStats(allQuestions))
@@ -22,39 +26,54 @@ export default function RevisionScreen({ setScreen }) {
   useEffect(() => {
     setPageIndex(0)
     answeredInPair.current = new Set()
-    pairKey.current = 0
   }, [filteredQuestions])
 
   const currentPair = filteredQuestions.slice(pageIndex, pageIndex + 2)
   const pairSize = currentPair.length
   const isLastPair = pageIndex + 2 >= filteredQuestions.length
 
-  const handleAnswer = useCallback((id, isCorrect) => {
-    markAnswer(id, isCorrect)
+  const handleAnswer = useCallback((id, isCorrect, selectedOption) => {
+    markAnswer(id, isCorrect, selectedOption)
     setStats(getStats(allQuestions))
     answeredInPair.current.add(id)
 
     if (answeredInPair.current.size >= pairSize && !isLastPair) {
       setTimeout(() => {
-        setPageIndex(prev => prev + 2)
-        answeredInPair.current = new Set()
+        setPageIndex(prev => {
+          const next = prev + 2
+          answeredInPair.current = seedAnswered(filteredQuestions.slice(next, next + 2))
+          return next
+        })
       }, 1000)
     }
-  }, [pairSize, isLastPair, allQuestions])
+  }, [pairSize, isLastPair, allQuestions, filteredQuestions])
 
   const goNext = () => {
     if (!isLastPair) {
-      setPageIndex(prev => prev + 2)
-      answeredInPair.current = new Set()
+      setPageIndex(prev => {
+        const next = prev + 2
+        answeredInPair.current = seedAnswered(filteredQuestions.slice(next, next + 2))
+        return next
+      })
     }
   }
 
   const goPrev = () => {
     if (pageIndex > 0) {
-      setPageIndex(prev => prev - 2)
-      answeredInPair.current = new Set()
+      setPageIndex(prev => {
+        const next = prev - 2
+        answeredInPair.current = seedAnswered(filteredQuestions.slice(next, next + 2))
+        return next
+      })
     }
   }
+
+  // Seed on first render after questions load
+  useEffect(() => {
+    if (currentPair.length > 0) {
+      answeredInPair.current = seedAnswered(currentPair)
+    }
+  }, [filteredQuestions]) // eslint-disable-line
 
   return (
     <div className="flex flex-col h-full">

@@ -8,9 +8,9 @@ export function getProgress() {
   }
 }
 
-export function markAnswer(id, isCorrect) {
+export function markAnswer(id, isCorrect, selectedOption) {
   const progress = getProgress()
-  progress[id] = { attempted: true, correct: isCorrect }
+  progress[id] = { attempted: true, correct: isCorrect, selectedOption }
   localStorage.setItem(KEY, JSON.stringify(progress))
 }
 
