@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import useQuestions from '../data/useQuestions'
 import { markAnswer, getStats, getProgress } from '../store/progressStore'
 import NavBar from '../components/NavBar'
@@ -11,7 +11,13 @@ function seedAnswered(pair) {
   return new Set(pair.filter(q => progress[q.id]?.attempted).map(q => q.id))
 }
 
-export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome }) {
+function formatTime(seconds) {
+  const m = Math.floor(seconds / 60).toString().padStart(2, '0')
+  const s = (seconds % 60).toString().padStart(2, '0')
+  return `${m}:${s}`
+}
+
+export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimitSeconds, onGoHome }) {
   const { allQuestions, filteredQuestions, filters, setFilters, allSubtopics } = useQuestions()
 
   const displayQuestions = testIds
@@ -24,6 +30,21 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome
   const [filterSheetOpen, setFilterSheetOpen] = useState(false)
   const [stats, setStats] = useState({ attempted: 0, correct: 0, total: 0 })
   const answeredInPair = useRef(new Set())
+
+  const [timeLeft, setTimeLeft] = useState(timeLimitSeconds)
+  const [timeExpired, setTimeExpired] = useState(false)
+
+  useEffect(() => {
+    if (!timeLimitSeconds || timeExpired) return
+    if (timeLeft <= 0) { setTimeExpired(true); return }
+    const id = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) { setTimeExpired(true); return 0 }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(id)
+  }, [timeLimitSeconds, timeLeft, timeExpired])
 
   useEffect(() => {
     setStats(getStats(allQuestions))
@@ -40,6 +61,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome
   const isLastPair = pageIndex + 2 >= displayQuestions.length
 
   const handleAnswer = useCallback((id, isCorrect, selectedOption) => {
+    if (timeExpired) return
     markAnswer(id, isCorrect, selectedOption)
     setStats(getStats(allQuestions))
     answeredInPair.current.add(id)
@@ -53,7 +75,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome
         })
       }, 1000)
     }
-  }, [pairSize, isLastPair, allQuestions, displayQuestions])
+  }, [pairSize, isLastPair, allQuestions, displayQuestions, timeExpired])
 
   const goNext = () => {
     if (!isLastPair) {
@@ -102,13 +124,27 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome
 
       {/* Mode banners */}
       {testIds && (
-        <div className="px-4 py-2 bg-indigo-500/10 border-b border-indigo-500/20 flex items-center gap-2">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2">
-            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-          </svg>
-          <span className="text-xs text-indigo-300 font-medium">
-            Test Mode — {testIds.length} randomized question{testIds.length !== 1 ? 's' : ''}
-          </span>
+        <div className={`px-4 py-2 border-b flex items-center justify-between
+          ${timeExpired
+            ? 'bg-red-500/15 border-red-500/30'
+            : timeLeft !== null && timeLeft <= 60
+              ? 'bg-red-500/10 border-red-500/20'
+              : 'bg-indigo-500/10 border-indigo-500/20'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={timeExpired || (timeLeft !== null && timeLeft <= 60) ? '#f87171' : '#818cf8'} strokeWidth="2">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+            <span className={`text-xs font-medium ${timeExpired || (timeLeft !== null && timeLeft <= 60) ? 'text-red-300' : 'text-indigo-300'}`}>
+              {timeExpired ? 'Time\'s Up!' : `Test Mode — ${testIds.length} question${testIds.length !== 1 ? 's' : ''}`}
+            </span>
+          </div>
+          {timeLimitSeconds && (
+            <span className={`text-sm font-bold tabular-nums ${timeExpired ? 'text-red-400' : timeLeft <= 60 ? 'text-red-300' : 'text-indigo-300'}`}>
+              {timeExpired ? '00:00' : formatTime(timeLeft)}
+            </span>
+          )}
         </div>
       )}
       {reviewIds && !testIds && (
@@ -124,7 +160,19 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome
 
       {/* Scrollable content */}
       <div className="flex-1 overflow-y-auto px-4 py-4">
-        {isEmpty ? (
+        {timeExpired ? (
+          <div className="flex flex-col items-center justify-center h-full gap-4">
+            <div className="text-5xl">⏰</div>
+            <p className="text-white text-lg font-bold">Time's Up!</p>
+            <p className="text-slate-400 text-sm text-center">Your test has ended. Check how you did.</p>
+            <button
+              onClick={() => setScreen('summary')}
+              className="mt-2 h-11 px-8 rounded-xl bg-indigo-600 text-white text-sm font-semibold active:bg-indigo-700 transition-colors"
+            >
+              See Results
+            </button>
+          </div>
+        ) : isEmpty ? (
           <div className="flex flex-col items-center justify-center h-full gap-3 text-slate-400">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>

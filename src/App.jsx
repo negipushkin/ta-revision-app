@@ -10,6 +10,7 @@ export default function App() {
   const [screen, setScreen] = useState('home')
   const [reviewIds, setReviewIds] = useState(null)
   const [testIds, setTestIds] = useState(null)
+  const [timeLimitSeconds, setTimeLimitSeconds] = useState(null)
   const { allQuestions } = useQuestions()
 
   const handleRevise = () => {
@@ -24,8 +25,9 @@ export default function App() {
     setScreen('revision')
   }
 
-  const handleCustomTest = (ids) => {
+  const handleCustomTest = (ids, timeLimit) => {
     setTestIds(ids)
+    setTimeLimitSeconds(timeLimit)
     setReviewIds(null)
     setScreen('revision')
   }
@@ -33,6 +35,7 @@ export default function App() {
   const handleGoHome = () => {
     setReviewIds(null)
     setTestIds(null)
+    setTimeLimitSeconds(null)
     setScreen('home')
   }
 
@@ -62,6 +65,7 @@ export default function App() {
           setScreen={setScreen}
           reviewIds={reviewIds}
           testIds={testIds}
+          timeLimitSeconds={timeLimitSeconds}
           onGoHome={handleGoHome}
         />
       )}

@@ -7,6 +7,7 @@ export default function CustomTestSetupScreen({ allQuestions, onStart, onBack })
   const [from, setFrom] = useState('1')
   const [to, setTo] = useState(String(MAX_Q))
   const [count, setCount] = useState('')
+  const [timeLimit, setTimeLimit] = useState('')
 
   const fromNum = Math.max(MIN_Q, Math.min(parseInt(from) || MIN_Q, MAX_Q))
   const toNum = Math.max(fromNum, Math.min(parseInt(to) || MAX_Q, MAX_Q))
@@ -17,9 +18,13 @@ export default function CustomTestSetupScreen({ allQuestions, onStart, onBack })
   const countNum = parseInt(count)
   const pickCount = count && countNum > 0 ? Math.min(countNum, available) : available
 
+  const timeLimitNum = parseInt(timeLimit)
+  const hasTimer = timeLimit && timeLimitNum > 0
+
   const handleStart = () => {
     const shuffled = [...questionsInRange].sort(() => Math.random() - 0.5)
-    onStart(shuffled.slice(0, pickCount).map(q => q.id))
+    const ids = shuffled.slice(0, pickCount).map(q => q.id)
+    onStart(ids, hasTimer ? timeLimitNum * 60 : null)
   }
 
   return (
@@ -84,9 +89,26 @@ export default function CustomTestSetupScreen({ allQuestions, onStart, onBack })
         <p className="text-xs text-slate-500 text-center">Leave blank to include all {available}</p>
       </div>
 
+      {/* Time limit */}
+      <div className="bg-[#1e293b] rounded-2xl p-4 flex flex-col gap-3">
+        <p className="text-xs text-slate-400 uppercase tracking-wider">Time Limit (minutes)</p>
+        <input
+          type="number"
+          min={1}
+          placeholder="No limit"
+          value={timeLimit}
+          onChange={e => setTimeLimit(e.target.value)}
+          className="w-full h-12 rounded-xl bg-slate-700 border border-slate-600 text-white text-center text-xl font-bold outline-none focus:border-indigo-500 placeholder:text-slate-500 placeholder:text-base placeholder:font-normal transition-colors"
+        />
+        <p className="text-xs text-slate-500 text-center">Leave blank for no timer</p>
+      </div>
+
       {/* Summary pill */}
       <div className="bg-indigo-600/15 border border-indigo-500/30 rounded-xl py-3 text-center">
-        <span className="text-indigo-300 text-sm font-semibold">{pickCount} randomized question{pickCount !== 1 ? 's' : ''}</span>
+        <span className="text-indigo-300 text-sm font-semibold">
+          {pickCount} randomized question{pickCount !== 1 ? 's' : ''}
+          {hasTimer ? ` · ${timeLimitNum} min` : ''}
+        </span>
       </div>
 
       <div className="mt-auto">
