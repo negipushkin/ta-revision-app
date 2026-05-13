@@ -158,21 +158,27 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
         </div>
       )}
 
+      {/* Time's Up inline summary */}
+      {timeExpired && (
+        <div className="px-4 py-3 bg-red-500/10 border-b border-red-500/20 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-semibold text-red-300">Time's Up!</p>
+            <p className="text-xs text-slate-400 mt-0.5">
+              {stats.correct} correct · {stats.attempted} attempted · {displayQuestions.length} total
+            </p>
+          </div>
+          <div className="text-right">
+            <span className="text-lg font-bold text-white">
+              {stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0}%
+            </span>
+            <p className="text-xs text-slate-500">accuracy</p>
+          </div>
+        </div>
+      )}
+
       {/* Scrollable content */}
       <div className="flex-1 overflow-y-auto px-4 py-4">
-        {timeExpired ? (
-          <div className="flex flex-col items-center justify-center h-full gap-4">
-            <div className="text-5xl">⏰</div>
-            <p className="text-white text-lg font-bold">Time's Up!</p>
-            <p className="text-slate-400 text-sm text-center">Your test has ended. Check how you did.</p>
-            <button
-              onClick={() => setScreen('summary')}
-              className="mt-2 h-11 px-8 rounded-xl bg-indigo-600 text-white text-sm font-semibold active:bg-indigo-700 transition-colors"
-            >
-              See Results
-            </button>
-          </div>
-        ) : isEmpty ? (
+        {isEmpty ? (
           <div className="flex flex-col items-center justify-center h-full gap-3 text-slate-400">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
