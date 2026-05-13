@@ -18,7 +18,7 @@ function formatTime(seconds) {
 }
 
 export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimitSeconds, onGoHome }) {
-  const { allQuestions, filteredQuestions, filters, setFilters, allSubtopics } = useQuestions()
+  const { allQuestions, filteredQuestions, filters, setFilters, allSubtopics, allSuperCategories } = useQuestions()
 
   const displayQuestions = testIds
     ? testIds.map(id => allQuestions.find(q => q.id === id)).filter(Boolean)
@@ -208,7 +208,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
               <>
                 <p className="text-sm text-center">No marked questions match the current filters.</p>
                 <button
-                  onClick={() => setFilters({ subtopic: '', difficulty: '', priority: '', weakOnly: false })}
+                  onClick={() => setFilters({ subtopics: [], superCategories: [], difficulty: '', priority: '', weakOnly: false })}
                   className="text-indigo-400 text-sm underline"
                 >
                   Clear filters
@@ -218,7 +218,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
               <>
                 <p className="text-sm">No questions match the current filters.</p>
                 <button
-                  onClick={() => setFilters({ subtopic: '', difficulty: '', priority: '', weakOnly: false })}
+                  onClick={() => setFilters({ subtopics: [], superCategories: [], difficulty: '', priority: '', weakOnly: false })}
                   className="text-indigo-400 text-sm underline"
                 >
                   Clear filters
@@ -264,6 +264,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
         <FilterSheet
           filters={filters}
           allSubtopics={allSubtopics}
+          allSuperCategories={allSuperCategories}
           onApply={setFilters}
           onClose={() => setFilterSheetOpen(false)}
         />

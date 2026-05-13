@@ -18,14 +18,89 @@ function Chip({ label, active, onClick }) {
   )
 }
 
-export default function FilterSheet({ filters, allSubtopics, onApply, onClose }) {
-  const [local, setLocal] = useState({ ...filters })
+function MultiSelectDropdown({ label, options, selected, onChange, placeholder }) {
+  const [search, setSearch] = useState('')
+  const [open, setOpen] = useState(false)
+
+  const filtered = options.filter(o =>
+    o.toLowerCase().includes(search.toLowerCase()) && !selected.includes(o)
+  )
+
+  const toggle = (val) => {
+    onChange(selected.includes(val) ? selected.filter(s => s !== val) : [...selected, val])
+  }
+
+  const handleBlur = () => {
+    setTimeout(() => setOpen(false), 150)
+  }
+
+  return (
+    <div>
+      <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">{label}</p>
+
+      {/* Selected chips */}
+      {selected.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 mb-2">
+          {selected.map(s => (
+            <span key={s} className="flex items-center gap-1 pl-2.5 pr-1.5 py-1 rounded-full bg-indigo-600/25 border border-indigo-500/50 text-xs text-indigo-300">
+              {s}
+              <button
+                onMouseDown={e => e.preventDefault()}
+                onClick={() => toggle(s)}
+                className="ml-0.5 w-4 h-4 flex items-center justify-center rounded-full hover:bg-indigo-500/40 text-indigo-400 font-bold"
+              >
+                ×
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Search input */}
+      <div className="relative">
+        <input
+          type="text"
+          value={search}
+          onChange={e => { setSearch(e.target.value); setOpen(true) }}
+          onFocus={() => setOpen(true)}
+          onBlur={handleBlur}
+          placeholder={placeholder}
+          className="w-full h-10 rounded-xl bg-slate-700 border border-slate-600 text-white text-sm px-3 outline-none focus:border-indigo-500 placeholder:text-slate-500 transition-colors"
+        />
+
+        {open && (filtered.length > 0 || search) && (
+          <div className="absolute z-20 w-full mt-1 bg-slate-800 border border-slate-600 rounded-xl overflow-hidden shadow-xl max-h-44 overflow-y-auto">
+            {filtered.length === 0 ? (
+              <p className="text-xs text-slate-500 px-3 py-2.5">No matches</p>
+            ) : (
+              filtered.map(opt => (
+                <button
+                  key={opt}
+                  onMouseDown={e => e.preventDefault()}
+                  onClick={() => { toggle(opt); setSearch('') }}
+                  className="w-full text-left text-sm text-slate-300 px-3 py-2.5 hover:bg-slate-700 active:bg-slate-600 transition-colors"
+                >
+                  {opt}
+                </button>
+              ))
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+const DEFAULT_LOCAL = { subtopics: [], superCategories: [], difficulty: '', priority: '', weakOnly: false }
+
+export default function FilterSheet({ filters, allSubtopics, allSuperCategories, onApply, onClose }) {
+  const [local, setLocal] = useState({ ...DEFAULT_LOCAL, ...filters })
 
   const toggle = (field, value) => {
     setLocal(prev => ({ ...prev, [field]: prev[field] === value ? '' : value }))
   }
 
-  const reset = () => setLocal({ subtopic: '', difficulty: '', priority: '', weakOnly: false })
+  const reset = () => setLocal(DEFAULT_LOCAL)
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end" style={{ maxWidth: 390, margin: '0 auto' }}>
@@ -45,15 +120,23 @@ export default function FilterSheet({ filters, allSubtopics, onApply, onClose })
         </div>
 
         <div className="overflow-y-auto flex-1 px-4 space-y-5 pb-4">
+          {/* Category */}
+          <MultiSelectDropdown
+            label="Category"
+            options={allSuperCategories}
+            selected={local.superCategories}
+            onChange={val => setLocal(prev => ({ ...prev, superCategories: val }))}
+            placeholder="Search categories…"
+          />
+
           {/* Subtopic */}
-          <div>
-            <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">Subtopic</p>
-            <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
-              {allSubtopics.map(st => (
-                <Chip key={st} label={st} active={local.subtopic === st} onClick={() => toggle('subtopic', st)} />
-              ))}
-            </div>
-          </div>
+          <MultiSelectDropdown
+            label="Subtopic"
+            options={allSubtopics}
+            selected={local.subtopics}
+            onChange={val => setLocal(prev => ({ ...prev, subtopics: val }))}
+            placeholder="Search subtopics…"
+          />
 
           {/* Difficulty */}
           <div>
@@ -116,8 +199,6 @@ export default function FilterSheet({ filters, allSubtopics, onApply, onClose })
           from { transform: translateY(100%); }
           to { transform: translateY(0); }
         }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
     </div>
   )

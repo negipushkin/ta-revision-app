@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { getProgress } from '../store/progressStore'
 
-const DEFAULT_FILTERS = { subtopic: '', difficulty: '', priority: '', weakOnly: false }
+const DEFAULT_FILTERS = { subtopics: [], superCategories: [], difficulty: '', priority: '', weakOnly: false }
 const PRIORITY_MAP = { P1: 'High', P2: 'Medium', P3: 'Low' }
 
 export default function useQuestions() {
@@ -18,7 +18,8 @@ export default function useQuestions() {
   const applyFilters = useCallback((questions, f) => {
     const progress = getProgress()
     return questions.filter(q => {
-      if (f.subtopic && q.subtopic !== f.subtopic) return false
+      if (f.subtopics?.length && !f.subtopics.includes(q.subtopic)) return false
+      if (f.superCategories?.length && !f.superCategories.includes(q.super_category)) return false
       if (f.difficulty && q.difficulty !== f.difficulty) return false
       if (f.priority && q.priority !== PRIORITY_MAP[f.priority]) return false
       if (f.weakOnly) {
@@ -55,6 +56,7 @@ export default function useQuestions() {
   }, [filters, allQuestions, applyFilters])
 
   const allSubtopics = [...new Set(allQuestions.map(q => q.subtopic).filter(Boolean))].sort()
+  const allSuperCategories = [...new Set(allQuestions.map(q => q.super_category).filter(Boolean))].sort()
 
-  return { allQuestions, filteredQuestions, filters, setFilters, shuffle, allSubtopics, refreshWeak }
+  return { allQuestions, filteredQuestions, filters, setFilters, shuffle, allSubtopics, allSuperCategories, refreshWeak }
 }
