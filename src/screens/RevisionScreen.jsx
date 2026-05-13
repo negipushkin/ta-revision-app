@@ -179,20 +179,24 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
         </div>
       )}
 
-      {/* Time's Up inline summary */}
-      {timeExpired && testStats && (
-        <div className="px-4 py-3 bg-red-500/10 border-b border-red-500/20 flex items-center justify-between">
-          <div>
-            <p className="text-sm font-semibold text-red-300">Time's Up!</p>
-            <p className="text-xs text-slate-400 mt-0.5">
-              {testStats.correct} correct · {testStats.attempted} attempted · {testStats.total} total
-            </p>
-          </div>
-          <div className="text-right">
-            <span className="text-lg font-bold text-white">
-              {testStats.attempted > 0 ? Math.round((testStats.correct / testStats.attempted) * 100) : 0}%
+      {/* Test stats bar */}
+      {testIds && testStats && (
+        <div className="px-4 py-2 bg-[#1e293b] border-b border-slate-700 flex items-center">
+          <div className="flex-1 flex flex-col items-center gap-0.5">
+            <span className="text-xs text-slate-500">Attempted</span>
+            <span className="text-sm font-bold text-white">
+              {testStats.attempted} <span className="text-xs font-normal text-slate-500">/ {testStats.total}</span>
             </span>
-            <p className="text-xs text-slate-500">accuracy</p>
+          </div>
+          <div className="w-px h-8 bg-slate-700" />
+          <div className="flex-1 flex flex-col items-center gap-0.5">
+            <span className="text-xs text-slate-500">Correct</span>
+            <span className="text-sm font-bold text-emerald-400">{testStats.correct}</span>
+          </div>
+          <div className="w-px h-8 bg-slate-700" />
+          <div className="flex-1 flex flex-col items-center gap-0.5">
+            <span className="text-xs text-slate-500">Wrong</span>
+            <span className="text-sm font-bold text-red-400">{testStats.attempted - testStats.correct}</span>
           </div>
         </div>
       )}
@@ -245,12 +249,36 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
         >
           ← Prev
         </button>
-        <button
-          onClick={onGoHome}
-          className="h-11 px-4 rounded-xl border border-slate-600 text-slate-300 text-sm font-medium active:bg-slate-700 transition-colors"
-        >
-          Home
-        </button>
+        {testIds ? (
+          <>
+            <button
+              onClick={onGoHome}
+              className="w-11 h-11 flex items-center justify-center rounded-xl border border-slate-600 text-slate-300 active:bg-slate-700 transition-colors"
+              aria-label="Main menu"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </button>
+            <button
+              onClick={() => {
+                setPageIndex(0)
+                answeredInPair.current = seedForPair(displayQuestions.slice(0, 2))
+              }}
+              className="h-11 px-4 rounded-xl border border-slate-600 text-slate-300 text-sm font-medium active:bg-slate-700 transition-colors"
+            >
+              Q 1
+            </button>
+          </>
+        ) : (
+          <button
+            onClick={onGoHome}
+            className="h-11 px-4 rounded-xl border border-slate-600 text-slate-300 text-sm font-medium active:bg-slate-700 transition-colors"
+          >
+            Home
+          </button>
+        )}
         <button
           onClick={goNext}
           disabled={isLastPair || isEmpty}
