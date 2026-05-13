@@ -29,7 +29,20 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
   const [pageIndex, setPageIndex] = useState(0)
   const [filterSheetOpen, setFilterSheetOpen] = useState(false)
   const [stats, setStats] = useState({ attempted: 0, correct: 0, total: 0 })
+  const [testProgress, setTestProgress] = useState({})
   const answeredInPair = useRef(new Set())
+
+  const testStats = testIds
+    ? (() => {
+        const vals = Object.values(testProgress)
+        return { attempted: vals.length, correct: vals.filter(v => v.correct).length, total: testIds.length }
+      })()
+    : null
+
+  const seedForPair = useCallback((pair) => {
+    if (testIds) return new Set(pair.filter(q => testProgress[q.id]?.attempted).map(q => q.id))
+    return seedAnswered(pair)
+  }, [testIds, testProgress])
 
   const [timeLeft, setTimeLeft] = useState(timeLimitSeconds)
   const [timeExpired, setTimeExpired] = useState(false)
@@ -62,26 +75,30 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
 
   const handleAnswer = useCallback((id, isCorrect, selectedOption) => {
     if (timeExpired) return
-    markAnswer(id, isCorrect, selectedOption)
-    setStats(getStats(allQuestions))
+    if (testIds) {
+      setTestProgress(prev => ({ ...prev, [id]: { attempted: true, correct: isCorrect, selectedOption } }))
+    } else {
+      markAnswer(id, isCorrect, selectedOption)
+      setStats(getStats(allQuestions))
+    }
     answeredInPair.current.add(id)
 
     if (answeredInPair.current.size >= pairSize && !isLastPair) {
       setTimeout(() => {
         setPageIndex(prev => {
           const next = prev + 2
-          answeredInPair.current = seedAnswered(displayQuestions.slice(next, next + 2))
+          answeredInPair.current = seedForPair(displayQuestions.slice(next, next + 2))
           return next
         })
       }, 1000)
     }
-  }, [pairSize, isLastPair, allQuestions, displayQuestions, timeExpired])
+  }, [pairSize, isLastPair, allQuestions, displayQuestions, timeExpired, testIds, seedForPair])
 
   const goNext = () => {
     if (!isLastPair) {
       setPageIndex(prev => {
         const next = prev + 2
-        answeredInPair.current = seedAnswered(displayQuestions.slice(next, next + 2))
+        answeredInPair.current = seedForPair(displayQuestions.slice(next, next + 2))
         return next
       })
     }
@@ -91,7 +108,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
     if (pageIndex > 0) {
       setPageIndex(prev => {
         const next = prev - 2
-        answeredInPair.current = seedAnswered(displayQuestions.slice(next, next + 2))
+        answeredInPair.current = seedForPair(displayQuestions.slice(next, next + 2))
         return next
       })
     }
@@ -100,7 +117,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
   // Seed on first render after questions load
   useEffect(() => {
     if (currentPair.length > 0) {
-      answeredInPair.current = seedAnswered(currentPair)
+      answeredInPair.current = testIds ? new Set() : seedAnswered(currentPair)
     }
   }, [filteredQuestions]) // eslint-disable-line
 
@@ -117,10 +134,14 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
           const target = Math.floor((n - 1) / 2) * 2
           const clamped = Math.min(target, displayQuestions.length - 1)
           setPageIndex(clamped)
-          answeredInPair.current = seedAnswered(displayQuestions.slice(clamped, clamped + 2))
+          answeredInPair.current = seedForPair(displayQuestions.slice(clamped, clamped + 2))
         }}
       />
-      <ProgressBar attempted={stats.attempted} correct={stats.correct} total={stats.total} />
+      <ProgressBar
+        attempted={testStats ? testStats.attempted : stats.attempted}
+        correct={testStats ? testStats.correct : stats.correct}
+        total={testStats ? testStats.total : stats.total}
+      />
 
       {/* Mode banners */}
       {testIds && (
@@ -159,17 +180,17 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
       )}
 
       {/* Time's Up inline summary */}
-      {timeExpired && (
+      {timeExpired && testStats && (
         <div className="px-4 py-3 bg-red-500/10 border-b border-red-500/20 flex items-center justify-between">
           <div>
             <p className="text-sm font-semibold text-red-300">Time's Up!</p>
             <p className="text-xs text-slate-400 mt-0.5">
-              {stats.correct} correct · {stats.attempted} attempted · {displayQuestions.length} total
+              {testStats.correct} correct · {testStats.attempted} attempted · {testStats.total} total
             </p>
           </div>
           <div className="text-right">
             <span className="text-lg font-bold text-white">
-              {stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0}%
+              {testStats.attempted > 0 ? Math.round((testStats.correct / testStats.attempted) * 100) : 0}%
             </span>
             <p className="text-xs text-slate-500">accuracy</p>
           </div>
@@ -210,6 +231,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
             key={pageIndex}
             questions={currentPair}
             onAnswer={handleAnswer}
+            fresh={!!testIds}
           />
         )}
       </div>

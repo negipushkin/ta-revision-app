@@ -9,8 +9,8 @@ const DIFFICULTY_COLORS = {
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D']
 
-export default function QuestionCard({ question, onAnswer }) {
-  const saved = getProgress()[question.id]
+export default function QuestionCard({ question, onAnswer, fresh = false }) {
+  const saved = fresh ? null : getProgress()[question.id]
   const [selected, setSelected] = useState(saved?.selectedOption ?? null)
   const [revealed, setRevealed] = useState(!!saved?.attempted)
   const [bookmarked, setBookmarked] = useState(() => getMarkedIds().has(question.id))

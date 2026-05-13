@@ -1,6 +1,6 @@
 import QuestionCard from './QuestionCard'
 
-export default function QuestionPair({ questions, onAnswer }) {
+export default function QuestionPair({ questions, onAnswer, fresh = false }) {
   return (
     <div className="flex flex-col gap-4">
       {questions[0] && (
@@ -8,6 +8,7 @@ export default function QuestionPair({ questions, onAnswer }) {
           key={questions[0].id}
           question={questions[0]}
           onAnswer={(isCorrect, sel) => onAnswer(questions[0].id, isCorrect, sel)}
+          fresh={fresh}
         />
       )}
       {questions[1] && (
@@ -17,6 +18,7 @@ export default function QuestionPair({ questions, onAnswer }) {
             key={questions[1].id}
             question={questions[1]}
             onAnswer={(isCorrect, sel) => onAnswer(questions[1].id, isCorrect, sel)}
+            fresh={fresh}
           />
         </>
       )}
