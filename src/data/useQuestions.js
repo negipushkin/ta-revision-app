@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { getProgress } from '../store/progressStore'
 
 const DEFAULT_FILTERS = { subtopic: '', difficulty: '', priority: '', weakOnly: false }
+const PRIORITY_MAP = { P1: 'High', P2: 'Medium', P3: 'Low' }
 
 export default function useQuestions() {
   const [allQuestions, setAllQuestions] = useState([])
@@ -19,7 +20,7 @@ export default function useQuestions() {
     return questions.filter(q => {
       if (f.subtopic && q.subtopic !== f.subtopic) return false
       if (f.difficulty && q.difficulty !== f.difficulty) return false
-      if (f.priority && q.priority !== f.priority) return false
+      if (f.priority && q.priority !== PRIORITY_MAP[f.priority]) return false
       if (f.weakOnly) {
         const p = progress[q.id]
         if (!p || !p.attempted || p.correct) return false
