@@ -11,12 +11,14 @@ function seedAnswered(pair) {
   return new Set(pair.filter(q => progress[q.id]?.attempted).map(q => q.id))
 }
 
-export default function RevisionScreen({ setScreen, reviewIds, onGoHome }) {
+export default function RevisionScreen({ setScreen, reviewIds, testIds, onGoHome }) {
   const { allQuestions, filteredQuestions, filters, setFilters, allSubtopics } = useQuestions()
 
-  const displayQuestions = reviewIds
-    ? filteredQuestions.filter(q => reviewIds.has(q.id))
-    : filteredQuestions
+  const displayQuestions = testIds
+    ? testIds.map(id => allQuestions.find(q => q.id === id)).filter(Boolean)
+    : reviewIds
+      ? filteredQuestions.filter(q => reviewIds.has(q.id))
+      : filteredQuestions
 
   const [pageIndex, setPageIndex] = useState(0)
   const [filterSheetOpen, setFilterSheetOpen] = useState(false)
@@ -87,7 +89,7 @@ export default function RevisionScreen({ setScreen, reviewIds, onGoHome }) {
       <NavBar
         current={pageIndex}
         total={displayQuestions.length}
-        onFilterOpen={() => setFilterSheetOpen(true)}
+        onFilterOpen={testIds ? null : () => setFilterSheetOpen(true)}
         onSummary={() => setScreen('summary')}
         onJumpTo={n => {
           const target = Math.floor((n - 1) / 2) * 2
@@ -98,8 +100,18 @@ export default function RevisionScreen({ setScreen, reviewIds, onGoHome }) {
       />
       <ProgressBar attempted={stats.attempted} correct={stats.correct} total={stats.total} />
 
-      {/* Review mode banner */}
-      {reviewIds && (
+      {/* Mode banners */}
+      {testIds && (
+        <div className="px-4 py-2 bg-indigo-500/10 border-b border-indigo-500/20 flex items-center gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2">
+            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+          <span className="text-xs text-indigo-300 font-medium">
+            Test Mode — {testIds.length} randomized question{testIds.length !== 1 ? 's' : ''}
+          </span>
+        </div>
+      )}
+      {reviewIds && !testIds && (
         <div className="px-4 py-2 bg-amber-500/10 border-b border-amber-500/20 flex items-center gap-2">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" strokeWidth="1.5">
             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>

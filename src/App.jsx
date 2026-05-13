@@ -2,26 +2,37 @@ import { useState } from 'react'
 import RevisionScreen from './screens/RevisionScreen'
 import SummaryScreen from './screens/SummaryScreen'
 import HomeScreen from './screens/HomeScreen'
+import CustomTestSetupScreen from './screens/CustomTestSetupScreen'
 import useQuestions from './data/useQuestions'
 import { getMarkedIds } from './store/progressStore'
 
 export default function App() {
   const [screen, setScreen] = useState('home')
   const [reviewIds, setReviewIds] = useState(null)
+  const [testIds, setTestIds] = useState(null)
   const { allQuestions } = useQuestions()
 
   const handleRevise = () => {
     setReviewIds(null)
+    setTestIds(null)
     setScreen('revision')
   }
 
   const handleReview = () => {
     setReviewIds(getMarkedIds())
+    setTestIds(null)
+    setScreen('revision')
+  }
+
+  const handleCustomTest = (ids) => {
+    setTestIds(ids)
+    setReviewIds(null)
     setScreen('revision')
   }
 
   const handleGoHome = () => {
     setReviewIds(null)
+    setTestIds(null)
     setScreen('home')
   }
 
@@ -35,13 +46,22 @@ export default function App() {
           allQuestions={allQuestions}
           onRevise={handleRevise}
           onReview={handleReview}
+          onCustomTest={() => setScreen('customTest')}
           onSummary={() => setScreen('summary')}
+        />
+      )}
+      {screen === 'customTest' && (
+        <CustomTestSetupScreen
+          allQuestions={allQuestions}
+          onStart={handleCustomTest}
+          onBack={() => setScreen('home')}
         />
       )}
       {screen === 'revision' && (
         <RevisionScreen
           setScreen={setScreen}
           reviewIds={reviewIds}
+          testIds={testIds}
           onGoHome={handleGoHome}
         />
       )}

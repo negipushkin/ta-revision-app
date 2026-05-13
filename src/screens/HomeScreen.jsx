@@ -1,6 +1,6 @@
 import { getStats, getMarkedCount } from '../store/progressStore'
 
-export default function HomeScreen({ allQuestions, onRevise, onReview, onSummary }) {
+export default function HomeScreen({ allQuestions, onRevise, onReview, onCustomTest, onSummary }) {
   const { attempted, correct, total } = getStats(allQuestions)
   const markedCount = getMarkedCount()
 
@@ -45,6 +45,13 @@ export default function HomeScreen({ allQuestions, onRevise, onReview, onSummary
           className="h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 text-sm font-semibold disabled:opacity-30 disabled:cursor-not-allowed active:bg-amber-500/30 transition-colors"
         >
           Review Marked{markedCount > 0 ? ` (${markedCount})` : ''}
+        </button>
+
+        <button
+          onClick={onCustomTest}
+          className="h-12 rounded-xl border border-indigo-500/50 text-indigo-300 text-sm font-semibold active:bg-indigo-600/20 transition-colors"
+        >
+          Custom Test
         </button>
       </div>
 
