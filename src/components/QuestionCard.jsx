@@ -9,16 +9,27 @@ const DIFFICULTY_COLORS = {
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D']
 
-export default function QuestionCard({ question, onAnswer, fresh = false }) {
+export default function QuestionCard({ question, onAnswer, fresh = false, shuffleOptions = false }) {
   const saved = fresh ? null : getProgress()[question.id]
   const [selected, setSelected] = useState(saved?.selectedOption ?? null)
   const [revealed, setRevealed] = useState(!!saved?.attempted)
   const [bookmarked, setBookmarked] = useState(() => getMarkedIds().has(question.id))
 
+  const [optionOrder] = useState(() => {
+    const labels = ['A', 'B', 'C', 'D']
+    if (!shuffleOptions) return labels
+    for (let i = labels.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[labels[i], labels[j]] = [labels[j], labels[i]]
+    }
+    return labels
+  })
+  const displayAnswer = OPTION_LABELS[optionOrder.indexOf(question.answer)]
+
   const handleCheck = () => {
     if (!selected || revealed) return
     setRevealed(true)
-    const isCorrect = selected === question.answer
+    const isCorrect = selected === displayAnswer
     onAnswer(isCorrect, selected)
   }
 
@@ -28,7 +39,7 @@ export default function QuestionCard({ question, onAnswer, fresh = false }) {
         ? 'border-indigo-500 bg-indigo-500/10 text-white'
         : 'border-slate-600 text-slate-300 active:bg-slate-700'
     }
-    if (label === question.answer) return 'border-emerald-500 bg-emerald-500/10 text-emerald-300'
+    if (label === displayAnswer) return 'border-emerald-500 bg-emerald-500/10 text-emerald-300'
     if (label === selected) return 'border-red-500 bg-red-500/10 text-red-300'
     return 'border-slate-700 text-slate-500'
   }
@@ -70,7 +81,7 @@ export default function QuestionCard({ question, onAnswer, fresh = false }) {
 
       {/* Options */}
       <div className="flex flex-col gap-2">
-        {OPTION_LABELS.map(label => (
+        {OPTION_LABELS.map((label, i) => (
           <button
             key={label}
             disabled={revealed}
@@ -78,7 +89,7 @@ export default function QuestionCard({ question, onAnswer, fresh = false }) {
             className={`min-h-[44px] w-full text-left px-3 py-2.5 rounded-xl border text-sm transition-colors flex gap-2 items-start ${optionStyle(label)}`}
           >
             <span className="font-bold shrink-0">{label}.</span>
-            <span>{question.options[label]}</span>
+            <span>{question.options[optionOrder[i]]}</span>
           </button>
         ))}
       </div>

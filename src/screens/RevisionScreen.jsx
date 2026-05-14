@@ -252,6 +252,7 @@ export default function RevisionScreen({ setScreen, reviewIds, testIds, timeLimi
             questions={currentPair}
             onAnswer={handleAnswer}
             fresh={!!testIds}
+            shuffleOptions={!!testIds}
           />
         )}
       </div>
