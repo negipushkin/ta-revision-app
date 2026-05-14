@@ -1,16 +1,13 @@
 import { useState, useEffect } from 'react'
-import { supabase } from './supabase'
-import { loadFromCloud, clearLocal, getMarkedIds } from './store/progressStore'
+import { loadFromCloud, getMarkedIds } from './store/progressStore'
 import RevisionScreen from './screens/RevisionScreen'
 import SummaryScreen from './screens/SummaryScreen'
 import HomeScreen from './screens/HomeScreen'
 import CustomTestSetupScreen from './screens/CustomTestSetupScreen'
-import LoginScreen from './screens/LoginScreen'
 import useQuestions from './data/useQuestions'
 
 export default function App() {
-  const [authState, setAuthState] = useState('checking') // 'checking' | 'loggedOut' | 'loading' | 'ready'
-  const [user, setUser] = useState(null)
+  const [ready, setReady] = useState(false)
   const [screen, setScreen] = useState('home')
   const [reviewIds, setReviewIds] = useState(null)
   const [testIds, setTestIds] = useState(null)
@@ -18,19 +15,7 @@ export default function App() {
   const { allQuestions } = useQuestions()
 
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
-      if (session?.user) {
-        setAuthState('loading')
-        setUser(session.user)
-        await loadFromCloud(session.user.id)
-        setAuthState('ready')
-      } else {
-        clearLocal()
-        setUser(null)
-        setAuthState('loggedOut')
-      }
-    })
-    return () => subscription.unsubscribe()
+    loadFromCloud().then(() => setReady(true))
   }, [])
 
   const handleRevise = () => {
@@ -59,18 +44,13 @@ export default function App() {
     setScreen('home')
   }
 
-  const handleSignOut = () => supabase.auth.signOut()
-
-  if (authState === 'checking' || authState === 'loading') {
+  if (!ready) {
     return (
       <div
         className="h-full flex flex-col items-center justify-center gap-3"
         style={{ maxWidth: 390, margin: '0 auto', backgroundColor: '#0f172a' }}
       >
         <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-        {authState === 'loading' && (
-          <p className="text-slate-400 text-sm">Loading your progress…</p>
-        )}
       </div>
     )
   }
@@ -80,45 +60,37 @@ export default function App() {
       className="h-full flex flex-col"
       style={{ maxWidth: 390, margin: '0 auto', backgroundColor: '#0f172a' }}
     >
-      {authState === 'loggedOut' && <LoginScreen />}
-
-      {authState === 'ready' && (
-        <>
-          {screen === 'home' && (
-            <HomeScreen
-              allQuestions={allQuestions}
-              user={user}
-              onRevise={handleRevise}
-              onReview={handleReview}
-              onCustomTest={() => setScreen('customTest')}
-              onSummary={() => setScreen('summary')}
-              onSignOut={handleSignOut}
-            />
-          )}
-          {screen === 'customTest' && (
-            <CustomTestSetupScreen
-              allQuestions={allQuestions}
-              onStart={handleCustomTest}
-              onBack={() => setScreen('home')}
-            />
-          )}
-          {screen === 'revision' && (
-            <RevisionScreen
-              setScreen={setScreen}
-              reviewIds={reviewIds}
-              testIds={testIds}
-              timeLimitSeconds={timeLimitSeconds}
-              onGoHome={handleGoHome}
-            />
-          )}
-          {screen === 'summary' && (
-            <SummaryScreen
-              setScreen={setScreen}
-              allQuestions={allQuestions}
-              onGoHome={handleGoHome}
-            />
-          )}
-        </>
+      {screen === 'home' && (
+        <HomeScreen
+          allQuestions={allQuestions}
+          onRevise={handleRevise}
+          onReview={handleReview}
+          onCustomTest={() => setScreen('customTest')}
+          onSummary={() => setScreen('summary')}
+        />
+      )}
+      {screen === 'customTest' && (
+        <CustomTestSetupScreen
+          allQuestions={allQuestions}
+          onStart={handleCustomTest}
+          onBack={() => setScreen('home')}
+        />
+      )}
+      {screen === 'revision' && (
+        <RevisionScreen
+          setScreen={setScreen}
+          reviewIds={reviewIds}
+          testIds={testIds}
+          timeLimitSeconds={timeLimitSeconds}
+          onGoHome={handleGoHome}
+        />
+      )}
+      {screen === 'summary' && (
+        <SummaryScreen
+          setScreen={setScreen}
+          allQuestions={allQuestions}
+          onGoHome={handleGoHome}
+        />
       )}
     </div>
   )

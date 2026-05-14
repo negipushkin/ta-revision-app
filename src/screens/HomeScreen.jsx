@@ -1,28 +1,15 @@
 import { getStats, getMarkedCount } from '../store/progressStore'
 
-export default function HomeScreen({ allQuestions, user, onRevise, onReview, onCustomTest, onSummary, onSignOut }) {
+export default function HomeScreen({ allQuestions, onRevise, onReview, onCustomTest, onSummary }) {
   const { attempted, correct, total } = getStats(allQuestions)
   const markedCount = getMarkedCount()
 
   return (
     <div className="flex flex-col h-full px-5 py-8 gap-6">
-      {/* Title + user */}
-      <div className="flex items-start justify-between pt-6">
-        <div className="flex flex-col gap-1">
-          <h1 className="text-2xl font-bold text-white tracking-tight">TA Revision</h1>
-          <p className="text-sm text-slate-400">Territorial Army 2026</p>
-        </div>
-        <button
-          onClick={onSignOut}
-          className="flex items-center gap-2 py-1 pl-1 pr-3 rounded-full bg-slate-800 active:bg-slate-700 transition-colors"
-          title="Sign out"
-        >
-          {user?.photoURL
-            ? <img src={user.photoURL} className="w-7 h-7 rounded-full" referrerPolicy="no-referrer" />
-            : <div className="w-7 h-7 rounded-full bg-indigo-600 flex items-center justify-center text-xs text-white font-bold">{user?.displayName?.[0] ?? '?'}</div>
-          }
-          <span className="text-xs text-slate-400">Sign out</span>
-        </button>
+      {/* Title */}
+      <div className="flex flex-col gap-1 pt-6">
+        <h1 className="text-2xl font-bold text-white tracking-tight">TA Revision</h1>
+        <p className="text-sm text-slate-400">Territorial Army 2026</p>
       </div>
 
       {/* Stats */}

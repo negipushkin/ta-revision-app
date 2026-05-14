@@ -3,46 +3,32 @@ import { supabase } from '../supabase'
 const KEY = 'ta_progress'
 const REVIEW_KEY = 'ta_review'
 
-let _uid = null
-
-export function setUid(uid) {
-  _uid = uid
-}
-
 async function pushToCloud() {
-  if (!_uid) return
   const progress = JSON.parse(localStorage.getItem(KEY) || '{}')
   const review = JSON.parse(localStorage.getItem(REVIEW_KEY) || '[]')
   try {
     await supabase
-      .from('user_progress')
-      .upsert({ user_id: _uid, progress, review, updated_at: new Date().toISOString() })
+      .from('progress')
+      .upsert({ id: 1, data: progress, review, updated_at: new Date().toISOString() })
   } catch (e) {
     console.error('Cloud sync failed', e)
   }
 }
 
-export async function loadFromCloud(uid) {
-  _uid = uid
+export async function loadFromCloud() {
   try {
     const { data } = await supabase
-      .from('user_progress')
-      .select('progress, review')
-      .eq('user_id', uid)
+      .from('progress')
+      .select('data, review')
+      .eq('id', 1)
       .single()
     if (data) {
-      if (data.progress) localStorage.setItem(KEY, JSON.stringify(data.progress))
+      if (data.data) localStorage.setItem(KEY, JSON.stringify(data.data))
       if (data.review) localStorage.setItem(REVIEW_KEY, JSON.stringify(data.review))
     }
   } catch (e) {
     console.error('Failed to load from cloud', e)
   }
-}
-
-export function clearLocal() {
-  localStorage.removeItem(KEY)
-  localStorage.removeItem(REVIEW_KEY)
-  _uid = null
 }
 
 export function getProgress() {
