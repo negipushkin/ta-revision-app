@@ -7,14 +7,9 @@ export default function AudioRevisionScreen({ questions, onBack }) {
 
   const activeRef = useRef(false)
   const waitTimerRef = useRef(null)
-  // Web Audio context kept alive so the browser doesn't suspend audio on lock screen
-  const audioCtxRef = useRef(null)
-  const silentSourceRef = useRef(null)
-  // Periodic heartbeat: Chrome Android cuts speechSynthesis after ~15s in background
-  const heartbeatRef = useRef(null)
   const voiceRef = useRef(null)
 
-  // Resolve Google English India voice; voices load asynchronously on first call
+  // Resolve Google US English voice; voices load asynchronously on first call
   useEffect(() => {
     function pickVoice() {
       const voices = window.speechSynthesis.getVoices()
@@ -46,62 +41,8 @@ export default function AudioRevisionScreen({ questions, onBack }) {
       activeRef.current = false
       window.speechSynthesis.cancel()
       if (waitTimerRef.current) clearTimeout(waitTimerRef.current)
-      stopKeepAlive()
     }
   }, [])
-
-  function startKeepAlive() {
-    // 1. Silent oscillator — keeps the browser audio engine from suspending
-    try {
-      const ctx = new (window.AudioContext || window.webkitAudioContext)()
-      audioCtxRef.current = ctx
-      const osc = ctx.createOscillator()
-      const gain = ctx.createGain()
-      gain.gain.value = 0 // completely silent
-      osc.connect(gain)
-      gain.connect(ctx.destination)
-      osc.start()
-      silentSourceRef.current = osc
-    } catch (_) {}
-
-    // 2. MediaSession — tells the OS that media is playing; shows lock-screen controls
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: 'Audio Revision',
-        artist: 'TA Prep',
-        album: 'Question Bank',
-      })
-      navigator.mediaSession.playbackState = 'playing'
-      navigator.mediaSession.setActionHandler('pause', handlePause)
-      navigator.mediaSession.setActionHandler('play', handlePlay)
-      navigator.mediaSession.setActionHandler('nexttrack', handleNext)
-      navigator.mediaSession.setActionHandler('previoustrack', handlePrev)
-    }
-
-    // 3. Heartbeat — Chrome Android kills speechSynthesis after ~15s in background;
-    //    pausing + resuming resets that timer without audibly interrupting speech.
-    heartbeatRef.current = setInterval(() => {
-      if (window.speechSynthesis.speaking) {
-        window.speechSynthesis.pause()
-        window.speechSynthesis.resume()
-      }
-    }, 10000)
-  }
-
-  function stopKeepAlive() {
-    if (heartbeatRef.current) { clearInterval(heartbeatRef.current); heartbeatRef.current = null }
-    try { silentSourceRef.current?.stop() } catch (_) {}
-    try { audioCtxRef.current?.close() } catch (_) {}
-    silentSourceRef.current = null
-    audioCtxRef.current = null
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.playbackState = 'none'
-      navigator.mediaSession.setActionHandler('pause', null)
-      navigator.mediaSession.setActionHandler('play', null)
-      navigator.mediaSession.setActionHandler('nexttrack', null)
-      navigator.mediaSession.setActionHandler('previoustrack', null)
-    }
-  }
 
   function speakText(text, onEnd) {
     const u = new SpeechSynthesisUtterance(text)
@@ -115,19 +56,10 @@ export default function AudioRevisionScreen({ questions, onBack }) {
 
   function doQuestion(index) {
     if (!activeRef.current) return
-    if (index >= questions.length) { setPhase('done'); stopKeepAlive(); return }
+    if (index >= questions.length) { setPhase('done'); return }
 
     setCurrentIndex(index)
     const q = questions[index]
-
-    // Keep lock-screen metadata current
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: `Q${q.id}: ${q.question.slice(0, 60)}`,
-        artist: q.subtopic || 'TA Revision',
-        album: 'Audio Revision',
-      })
-    }
 
     setPhase('question')
     speakText(`Question ${q.id}. ${q.question}`, () => {
@@ -156,20 +88,16 @@ export default function AudioRevisionScreen({ questions, onBack }) {
 
   function handlePlay() {
     activeRef.current = true
-    startKeepAlive()
     doQuestion(currentIndex)
   }
 
   function handlePause() {
     cancelAll()
-    stopKeepAlive()
-    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused'
     setPhase('paused')
   }
 
   function handleStop() {
     cancelAll()
-    stopKeepAlive()
     onBack()
   }
 
