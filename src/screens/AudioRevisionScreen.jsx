@@ -11,7 +11,7 @@ export default function AudioRevisionScreen({ questions, onBack }) {
   const audioCtxRef = useRef(null)
   const silentSourceRef = useRef(null)
   // Periodic heartbeat: Chrome Android cuts speechSynthesis after ~15s in background
-  const heartbeatRef = useRef(null) // kept for cleanup safety, no longer used
+  const heartbeatRef = useRef(null)
   const voiceRef = useRef(null)
 
   // Resolve Google English India voice; voices load asynchronously on first call
@@ -78,6 +78,14 @@ export default function AudioRevisionScreen({ questions, onBack }) {
       navigator.mediaSession.setActionHandler('previoustrack', handlePrev)
     }
 
+    // 3. Heartbeat — Chrome Android kills speechSynthesis after ~15s in background;
+    //    pausing + resuming resets that timer without audibly interrupting speech.
+    heartbeatRef.current = setInterval(() => {
+      if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.pause()
+        window.speechSynthesis.resume()
+      }
+    }, 10000)
   }
 
   function stopKeepAlive() {
