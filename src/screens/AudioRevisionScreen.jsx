@@ -12,6 +12,23 @@ export default function AudioRevisionScreen({ questions, onBack }) {
   const silentSourceRef = useRef(null)
   // Periodic heartbeat: Chrome Android cuts speechSynthesis after ~15s in background
   const heartbeatRef = useRef(null)
+  const voiceRef = useRef(null)
+
+  // Resolve Google English India voice; voices load asynchronously on first call
+  useEffect(() => {
+    function pickVoice() {
+      const voices = window.speechSynthesis.getVoices()
+      if (!voices.length) return
+      voiceRef.current =
+        voices.find(v => v.name === 'Google English India') ||
+        voices.find(v => v.lang === 'en-IN' && v.name.toLowerCase().includes('google')) ||
+        voices.find(v => v.lang === 'en-IN') ||
+        null
+    }
+    pickVoice()
+    window.speechSynthesis.addEventListener('voiceschanged', pickVoice)
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', pickVoice)
+  }, [])
 
   const isPlaying = ['question', 'answer', 'explanation', 'waiting'].includes(phase)
 
@@ -90,6 +107,7 @@ export default function AudioRevisionScreen({ questions, onBack }) {
     const u = new SpeechSynthesisUtterance(text)
     u.rate = 0.85
     u.lang = 'en-IN'
+    if (voiceRef.current) u.voice = voiceRef.current
     u.onend = onEnd
     u.onerror = (e) => { if (e.error !== 'interrupted') onEnd() }
     window.speechSynthesis.speak(u)
