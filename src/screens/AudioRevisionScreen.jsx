@@ -20,9 +20,9 @@ export default function AudioRevisionScreen({ questions, onBack }) {
       const voices = window.speechSynthesis.getVoices()
       if (!voices.length) return
       voiceRef.current =
-        voices.find(v => v.name === 'Google English India') ||
-        voices.find(v => v.lang === 'en-IN' && v.name.toLowerCase().includes('google')) ||
-        voices.find(v => v.lang === 'en-IN') ||
+        voices.find(v => v.name === 'Google US English') ||
+        voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('google')) ||
+        voices.find(v => v.lang === 'en-US') ||
         null
     }
     pickVoice()
@@ -106,7 +106,7 @@ export default function AudioRevisionScreen({ questions, onBack }) {
   function speakText(text, onEnd) {
     const u = new SpeechSynthesisUtterance(text)
     u.rate = 0.85
-    u.lang = 'en-IN'
+    u.lang = 'en-US'
     if (voiceRef.current) u.voice = voiceRef.current
     u.onend = onEnd
     u.onerror = (e) => { if (e.error !== 'interrupted') onEnd() }
