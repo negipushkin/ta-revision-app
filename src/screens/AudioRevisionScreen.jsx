@@ -8,6 +8,7 @@ export default function AudioRevisionScreen({ questions, onBack }) {
   const activeRef = useRef(false)
   const waitTimerRef = useRef(null)
   const voiceRef = useRef(null)
+  const wakeLockRef = useRef(null)
 
   // Resolve Google US English voice; voices load asynchronously on first call
   useEffect(() => {
@@ -35,14 +36,38 @@ export default function AudioRevisionScreen({ questions, onBack }) {
     return () => clearInterval(iv)
   }, [phase])
 
+  // Re-acquire wake lock if the page becomes visible again while playing
+  useEffect(() => {
+    function onVisibilityChange() {
+      if (document.visibilityState === 'visible' && activeRef.current) acquireWakeLock()
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
+    return () => document.removeEventListener('visibilitychange', onVisibilityChange)
+  }, [])
+
   // Cleanup on unmount
   useEffect(() => {
     return () => {
       activeRef.current = false
       window.speechSynthesis.cancel()
       if (waitTimerRef.current) clearTimeout(waitTimerRef.current)
+      releaseWakeLock()
     }
   }, [])
+
+  async function acquireWakeLock() {
+    if (!('wakeLock' in navigator)) return
+    try {
+      wakeLockRef.current = await navigator.wakeLock.request('screen')
+    } catch (_) {}
+  }
+
+  function releaseWakeLock() {
+    if (wakeLockRef.current) {
+      wakeLockRef.current.release()
+      wakeLockRef.current = null
+    }
+  }
 
   function speakText(text, onEnd) {
     const u = new SpeechSynthesisUtterance(text)
@@ -56,7 +81,7 @@ export default function AudioRevisionScreen({ questions, onBack }) {
 
   function doQuestion(index) {
     if (!activeRef.current) return
-    if (index >= questions.length) { setPhase('done'); return }
+    if (index >= questions.length) { setPhase('done'); releaseWakeLock(); return }
 
     setCurrentIndex(index)
     const q = questions[index]
@@ -88,16 +113,19 @@ export default function AudioRevisionScreen({ questions, onBack }) {
 
   function handlePlay() {
     activeRef.current = true
+    acquireWakeLock()
     doQuestion(currentIndex)
   }
 
   function handlePause() {
     cancelAll()
+    releaseWakeLock()
     setPhase('paused')
   }
 
   function handleStop() {
     cancelAll()
+    releaseWakeLock()
     onBack()
   }
 
