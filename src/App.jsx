@@ -4,6 +4,8 @@ import RevisionScreen from './screens/RevisionScreen'
 import SummaryScreen from './screens/SummaryScreen'
 import HomeScreen from './screens/HomeScreen'
 import CustomTestSetupScreen from './screens/CustomTestSetupScreen'
+import AudioRevisionSetupScreen from './screens/AudioRevisionSetupScreen'
+import AudioRevisionScreen from './screens/AudioRevisionScreen'
 import useQuestions from './data/useQuestions'
 
 export default function App() {
@@ -12,6 +14,7 @@ export default function App() {
   const [reviewIds, setReviewIds] = useState(null)
   const [testIds, setTestIds] = useState(null)
   const [timeLimitSeconds, setTimeLimitSeconds] = useState(null)
+  const [audioQuestions, setAudioQuestions] = useState(null)
   const { allQuestions } = useQuestions()
 
   useEffect(() => {
@@ -37,10 +40,16 @@ export default function App() {
     setScreen('revision')
   }
 
+  const handleAudioRevisionStart = (questions) => {
+    setAudioQuestions(questions)
+    setScreen('audioRevision')
+  }
+
   const handleGoHome = () => {
     setReviewIds(null)
     setTestIds(null)
     setTimeLimitSeconds(null)
+    setAudioQuestions(null)
     setScreen('home')
   }
 
@@ -66,6 +75,7 @@ export default function App() {
           onRevise={handleRevise}
           onReview={handleReview}
           onCustomTest={() => setScreen('customTest')}
+          onAudioRevision={() => setScreen('audioRevisionSetup')}
           onSummary={() => setScreen('summary')}
         />
       )}
@@ -83,6 +93,19 @@ export default function App() {
           testIds={testIds}
           timeLimitSeconds={timeLimitSeconds}
           onGoHome={handleGoHome}
+        />
+      )}
+      {screen === 'audioRevisionSetup' && (
+        <AudioRevisionSetupScreen
+          allQuestions={allQuestions}
+          onStart={handleAudioRevisionStart}
+          onBack={() => setScreen('home')}
+        />
+      )}
+      {screen === 'audioRevision' && audioQuestions && (
+        <AudioRevisionScreen
+          questions={audioQuestions}
+          onBack={handleGoHome}
         />
       )}
       {screen === 'summary' && (

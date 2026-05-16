@@ -1,6 +1,6 @@
 import { getStats, getMarkedCount } from '../store/progressStore'
 
-export default function HomeScreen({ allQuestions, onRevise, onReview, onCustomTest, onSummary }) {
+export default function HomeScreen({ allQuestions, onRevise, onReview, onCustomTest, onAudioRevision, onSummary }) {
   const { attempted, correct, total } = getStats(allQuestions)
   const markedCount = getMarkedCount()
 
@@ -52,6 +52,13 @@ export default function HomeScreen({ allQuestions, onRevise, onReview, onCustomT
           className="h-12 rounded-xl border border-indigo-500/50 text-indigo-300 text-sm font-semibold active:bg-indigo-600/20 transition-colors"
         >
           Custom Test
+        </button>
+
+        <button
+          onClick={onAudioRevision}
+          className="h-12 rounded-xl border border-slate-500/50 text-slate-300 text-sm font-semibold active:bg-slate-700/40 transition-colors"
+        >
+          Audio Revision
         </button>
       </div>
 
